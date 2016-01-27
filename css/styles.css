@@ -38,6 +38,11 @@ h3 {
   color: #888888;
 }
 
+.h3-head {
+  color: #555555;
+  font-weight: 500;
+}
+
 h4 {
   font-weight: 500;
   font-size: 11px;
@@ -186,6 +191,10 @@ a:hover, a:active, a:focus {
 
 .body-header h4:hover {
   margin-left: -5px;
+}
+
+.blue {
+  color: #00BAAD;
 }
 
 /* Animation */
