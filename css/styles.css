@@ -41,6 +41,12 @@ h3 {
 .h3-head {
   color: #555555;
   font-weight: 500;
+  font-size: 18px;
+}
+
+p {
+  font-size: 14px;
+  color: #888888;
 }
 
 h4 {
@@ -134,6 +140,15 @@ a:hover, a:active, a:focus {
   width: 100%;
 }
 
+#shopbolt .image-box {
+  padding-top: 40px;
+  min-height: 400px;
+}
+
+#shopbolt:hover .image-box {
+  padding-top: 24px;
+}
+
 @media (max-width: 992px) {
 
   .container-fluid {
@@ -163,6 +178,14 @@ a:hover, a:active, a:focus {
     padding-right: 24px;
   }
 
+  #shopbolt .image-box {
+    padding-top: 20px;
+    min-height: 0;
+  }
+
+  #shopbolt:hover .image-box {
+    padding-top: 4px;
+  }
 }
 
 /* Portfolio Pages */
@@ -177,11 +200,23 @@ a:hover, a:active, a:focus {
   padding: 24px 0;
 }
 
+.shopbolt-body {
+  background: #F8F8F8;
+}
+
 .body-img {
   max-width: 800px;
   width: 100%;
   display: block;
   margin: 20px auto;
+}
+
+.shopbolt-img {
+  width: 100%;
+  display: block;
+  margin: 30px 0 40px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  border-radius: 3px;
 }
 
 .body-image-box {
@@ -195,6 +230,13 @@ a:hover, a:active, a:focus {
 
 .blue {
   color: #00BAAD;
+}
+
+.caption {
+  margin-top: -10px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-style: italic;
 }
 
 /* Animation */
