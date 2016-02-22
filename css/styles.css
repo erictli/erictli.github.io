@@ -182,6 +182,12 @@ a:hover, a:active, a:focus {
   #shopbolt:hover .image-box {
     padding-top: 4px;
   }
+
+  #product-display .image-box {
+    width: 120%;
+    margin-left: -10%;
+    padding-bottom: 0;
+  }
 }
 
 /* Portfolio Pages */
