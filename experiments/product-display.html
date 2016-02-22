@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eric Li - Product Display Experiments</title>
+    <meta name="description" content="Hello, I'm Eric. I'm passionate about designing great products and experiences and always looking for the next adventure.">
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-10942209-5', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body>
+
+      <div class="header body-header">
+        <div class="container-fluid">
+          <div class="header-text col-xs-12">
+            <h4><a href="../index.html">BACK TO HOMEPAGE</a></h4>
+            <h1 class="bounceInUp animated">Product Display Experiments</h1>
+            <h2 class="bounceInUp animated animated-delay">I've been playing around with some ways to display product content for a blog I'm working on and I'm testing out my ideas here. Everything is a work in progress (e.g. not everything is designed responsively... yet). More to come soon!</h2>
+          </div>
+        </div>
+      </div>
+      <div class="bounceInUp animated animated-delay-2">
+        <div class="body-section product-blog-body">
+          <div class="product-outer">
+            <div class="img-wrapper">
+              <img id="uniqlo" src="../images/uniqlo.png">
+            </div>
+            <div class="product-inner">
+              <div class="product-share-bar">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//helloeric.co/experiments/product-blog.html" target="blank"><img class="share-icon" src="../images/facebook.png"></a>
+                <a href="https://twitter.com/home?status=Check%20out%20http%3A//helloeric.co/experiments/product-blog.html" target="blank"><img class="share-icon" src="../images/twitter.png"></a>
+                <a href="" target="blank"><img class="share-icon" src="../images/mail.png"></a>
+              </div>
+              <div class="product-meta-wrapper">
+                <h3 class="product-brand">UNIQLO</h4>
+                <h2 class="product-name">Men's Lemaire Knit Jacket</h2>
+                <!--<h3 class="product-prev-price">$89.90</h3>-->
+                <a href="http://www.uniqlo.com/us/product/men-lemaire-knit-jacket-166096.html" target="blank" class="product-price">$49.90</a>
+              </div>
+              <div class="product-border-box">
+                <img class="upvote" src="../images/upvote-dark.png">
+                <h3 class="counter">128</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+      $(function(){
+          $(".upvote").click(function(){
+            var count = parseInt($("~ .counter", this).text());
+            console.log(count);
+            var count = count + 1;
+            $("~ .counter", this).text(count);
+
+          });
+      });
+      </script>
+  </body>
+</html>
