@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Avenir Next";
-    src: url("fonts/avenir-next.ttc");
+    src: url("../fonts/avenir-next.ttc");
 }
 
 @font-face {
     font-family: "Hoefler Text";
-    src: url("fonts/hoefler-text.ttc");
+    src: url("../fonts/hoefler-text.ttc");
 }
 
 body {
