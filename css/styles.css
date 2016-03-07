@@ -1,11 +1,19 @@
 @font-face {
     font-family: "Avenir Next";
-    src: url("../fonts/avenir-next.ttc");
+    src: url("../fonts/AvenirNext-Bold.ttf");
+    font-weight: 700;
 }
 
 @font-face {
     font-family: "Hoefler Text";
-    src: url("../fonts/hoefler-text.ttc");
+    src: url("../fonts/HoeflerText-Black.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Hoefler Text";
+    src: url("../fonts/HoeflerText-Regular.ttf");
+    font-weight: 400;
 }
 
 body {
