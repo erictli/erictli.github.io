@@ -275,6 +275,10 @@ p {
   padding: 80px 30px 100px;
 }
 
+.appendix-header-section {
+  padding-bottom: 40px;
+}
+
 .back-link {
   text-decoration: none;
 }
@@ -308,6 +312,10 @@ p {
   background: #FFFFFF;
 }
 
+.appendix-project-section {
+  padding-top: 40px;
+}
+
 .project-header-image {
   margin-top: -160px;
 }
@@ -333,6 +341,26 @@ p {
   box-shadow: 0 0 30px rgba(0,0,0,0.2);
   display: block;
   margin: 20px auto 15px;
+}
+
+.project-screenshot-sb {
+  width: 300px;
+  display: block;
+  margin: 5px auto;
+}
+
+.project-screenshot-lc {
+  width: 300px;
+  display: block;
+  margin: 20px auto 15px;
+  border-radius: 2px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+}
+
+.project-screenshot-pg {
+  width: 140%;
+  display: block;
+  margin: 20px 0 15px -20%;
 }
 
 .inline-link {
