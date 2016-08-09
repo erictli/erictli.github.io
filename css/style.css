@@ -1,0 +1,293 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  color: #222222;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.3em;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #888888;
+  opacity: 0.3;
+}
+
+
+p {
+  color: #888888;
+  font-size: 14px;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.text-link {
+  color: #222222;
+  font-weight: 500;
+  -webkit-transition: all .8s; /* Safari */
+  transition: all .8s;
+}
+
+.text-link:hover {
+  color: #FF3500;
+}
+
+.light {
+  color: #888888;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.thin {
+  font-weight: 300;
+}
+
+nav {
+  z-index: 888;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -166px;
+}
+
+nav ul {
+  text-align: center;
+  width: 332px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+}
+.container {
+  max-width: 1016px;
+  margin: 0 auto;
+  padding: 0px 32px;
+}
+
+.six {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  padding: 0;
+}
+
+@media screen and (max-width: 720px) {
+    .six {
+        width: 100%;
+    }
+
+    .p-left {
+      margin-right: 0px;
+    }
+
+    .p-right {
+      margin-left: 0px;
+    }
+}
+
+nav li {
+  display: inline-block;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  color: #222222;
+  vertical-align: top;
+  -webkit-transition: all .8s; /* Safari */
+  transition: all .8s;
+}
+
+.site-logo {
+  color: #222222;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-right: 5px;
+  padding-right: 22px;
+  border-left: none;
+  font-weight: 500;
+  border-right: solid 1px rgba(0,0,0,0.1);
+  border-radius: 0;
+  -webkit-transition: all .8s; /* Safari */
+  transition: all .8s;
+}
+
+.site-logo:hover {
+  color: #FF3500;
+}
+
+.icon-link img {
+  height: 12px;
+}
+
+.icon-link:hover {
+  background: #F9F9F9;
+}
+
+.icon-link path {
+  -webkit-transition: all .8s; /* Safari */
+  transition: all .8s;
+}
+
+.icon-link:hover path {
+  fill: #FF3500;
+}
+
+.site-email {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
+
+.site-email:hover {
+  background: #F5F5F5;
+  color: #FF3500;
+}
+
+.profile {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero {
+  margin-top: 112px;
+}
+
+.hero-header {
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.work-header {
+  max-width: 560px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  font-weight: 400;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.work {
+  padding: 72px 0 96px;
+  border-top: solid 1px rgba(0,0,0,0.1);
+  background: #FFFFFF;
+}
+
+.project {
+  padding: 112px 0 40px;
+  background: #FFFFFF;
+}
+
+.project-header {
+  margin-bottom: 64px;
+}
+
+.preview {
+  background: #FFFFFF;
+  margin-top: 24px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 2px;
+  -webkit-transition: all .8s; /* Safari */
+  transition: all .8s;
+  position: relative;
+  padding: 48px 28px 40px;
+}
+
+.preview:hover {
+  background: #F9F9F9;
+}
+
+.preview-img {
+  width: 100%;
+  -webkit-transition: all .8s; /* Safari */
+  transition: all .8s;
+}
+
+.preview-text {
+  -webkit-transition: all .8s; /* Safari */
+  transition: all .8s;
+  color: #222222;
+  opacity: 1;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.preview-meta {
+  -webkit-transition: all .8s; /* Safari */
+  transition: all .8s;
+  opacity: 0.3;
+  color: #888888;
+  font-size: 12px;
+}
+
+.preview:hover .preview-text {
+  opacity: 1;
+  color: #FF3500;
+}
+
+.preview:hover .preview-meta {
+  opacity: 1;
+}
+
+.p-left {
+  margin-right: 12px;
+}
+
+.p-right {
+  margin-left: 12px;
+}
+
+.screen-web {
+  width: 100%;
+  margin: 0 auto 96px;
+  max-width: 840px;
+  display: block;
+}
+
+.screen-mobile {
+  width: 60%;
+  margin: 0 auto 96px;
+  max-width: 320px;
+  display: block;
+}
