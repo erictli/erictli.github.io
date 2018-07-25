@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Eric Li</title>
+    <title>Eric Li Design</title>
     <link rel="shortcut icon" href="images/favicon.png">
 
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400,700" rel="stylesheet">
 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -22,130 +23,256 @@
 
   </head>
   <body>
-    <section class="intro-section animated animated-delay-0 fadeInLeft">
-      <div class="container">
-        <div class="col-6">
-          <div class="intro animated animated-delay-1 halfFade">
-            <h1 class="mb-8">Hi, I’m Eric Li. 👨🏻‍💻  &nbsp;I’m a product designer based in New York City.</h1>
-            <p class="mb-20">I currently work at Bread Finance and also make and sell button-down shirts at Topology.</p>
-            <a class="button-primary" href="mailto:hi@ericli.io">hi@ericli.io</a>
+    <nav class="animated fadeIn animated-delay-3">
+      <div class="logo" onclick="switchToIntro()"><span class="bold">Eric Li</span> Design<img src="images/logo-cover.png"></div>
+      <ul>
+        <li class="nav-link" id="intro-link" onclick="switchToIntro()">Intro</li>
+        <li class="nav-link" id="work-link" onclick="switchToWork()">Work</li>
+        <li class="nav-link" id="about-link" onclick="switchToAbout()">About</li>
+        <li class="nav-link" id="contact-link" onclick="switchToContact()">Contact</li>
+      </ul>
+    </nav>
+
+    <section id="intro">
+      <div class="container white-text">
+        <div class="left animated fadeInUp animated-delay-1">
+          <h1>I help businesses design user-centric experiences and make data-driven product decisions.</h1>
+          <div>
+            <div class="meta"><img src="images/location.svg"><p>New York, NY</p></div>
+            <div class="meta"><img src="images/work.svg"><p>Bread</p></div>
           </div>
-        </div><div class="col-6">
-          <div class="about animated animated-delay-2 halfFade">
-            <h2 class="mb-8">About Me</h2>
-            <p class="mb-12">I studied economics at the University of Chicago and started my career as an investment banker 🤦🏻 before  moving over to product and design. Since then, I’ve been lucky enough to work on interesting problems at companies ranging from 10 to 100,000+ employees.</p>
-            <h2 class="text-link-group"><a class="text-link" target="_blank" href="https://dribbble.com/helloeric">Dribbble</a> | <a class="text-link" target="_blank" href="https://www.linkedin.com/in/erictli">LinkedIn</a> | <a class="text-link" target="_blank" href="https://weartopology.com">Topology</a></h2>
+          <div class="button-group">
+            <a class="button" onclick="switchToWork()">See my work</a>
+            <a class="button button-secondary" onclick="switchToContact()">Get in touch</a>
+          </div>
+        </div><div class="right animated fadeInUp animated-delay-2">
+          <img id="img-intro-laptop" class="animated infinite float-1" src="images/laptop-home.png">
+          <img id="img-intro-iphone" class="animated infinite float-2 animated-delay-2" src="images/iphone-home.png">
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="container">
+        <div class="title-group animated fadeInUp animated-delay-1">
+          <h2>Select projects</h2>
+          <p>Here’s a very quick glance at the types of projects that I’ve worked on. If you’d like to see more details, <a>contact me.</a></p>
+        </div>
+        <div class="animated fadeInUp animated-delay-1">
+          <div class="project">
+            <h3>Bread checkout optimization</h3>
+            <p class="muted">Analytics • User Research  • Product Design</p>
+            <img class="mobile-hide" src="images/checkout-1.jpg"><img src="images/checkout-2.jpg">
+            <p>Bread’s checkout experience is one of the most important areas of our product. It is the first interaction most consumers have with Bread and any increase (or decrease) to our conversion rate can meaningfully impact our revenue and the revenue of our retail partners.</p>
+            <p>When I joined Bread, one of my first priorities was to set up actionable tagging of our checkout funnel. We mapped out the flows we wanted to measure and set up reporting. We also ran surveys, usability tests, and user interviews to better understand the “jobs” that shoppers were hiring “Bread” for and to immerse ourselves in the context of shoppers who were considering financing. Through this research, we gained a better understanding of why customers were choosing financing, what factors were important to them, and what areas of the user experience shoppers were adding friction to the funnel.</p>
+            <p>Alongside this research, we began making improvements to our checkout flow. We designed and launched our first A/B test of a new experience for presenting loan options to consumers. Back then, our traffic was relatively low and the test took a couple of months to reach significance, but ultimately led to a 5% improvement in conversion. Since then we've continued to improving our checkout experience, including running succesful tests on our prequalification form and launching new checkout products focused on specific areas of the purchase funnel.</p>
+          </div>
+          <div class="project">
+            <h3>Bread payment experience</h3>
+            <p class="muted">User Research • Product Design</p>
+            <img class="mobile-hide" src="images/payment-1.jpg"><img src="images/payment-2.jpg">
+            <p>Bread's loan repayment experience is a very important for both Bread and the consumers who take out loans with us. Creating a great user experience helps to ensure that Bread gets paid, our operations team isn't flooded with questions, and consumers are able to easily navigate the stressful event of giving away their hard-earned money. The first project I worked on at Bread was optimizing the loan repayment experience. The UX was confusing, payments were being misapplied, and many customers were calling our support line with questions.</p>
+            <p>We approached this problem by first trying to understand our users and how they thought about making payments. We developed and conducted user surveys and interviews to help us understand the motivations and context around how our users thought about making payments. After categorizing the types of payments users wanted to make, we designed a new experience, created high fidelity prototypes in Invision and Framer and tested them with users before launching an updated payment flow. With the new flow, we saw a reduction in payment mistakes and support calls about payments. We also introduced a more customer-friendly way for borrowers to make principal prepayments (and reduce their interest cost), which now accounts for a significant percentage of all payments.</p>
+          </div>
+          <div class="project">
+            <h3>Capture.com product</h3>
+            <p class="muted">Product Design</p>
+            <img src="images/capture-1.jpg"><img class="mobile-hide" src="images/capture-2.jpg">
+            <p>Capture helps brands and publishers find, display, and license real-time social content. Our customers included CNN, Buzzfeed, The Washington Post, and The Weather Channel. During my time at Capture, we redesigned our core product (which allowed customers to search and acquire rights for social photos and videos in real-time), launched a self-service sign-up and payments flow, and built new features for e-commerce and brand marketing customers. We also concepted, designed, and pitched an on-demand video product that made it easy for publishers to get on-demand video coverage of breaking news events. As the only designer, I also helped create prototypes and presentations for partnership discussions, which ultimately resulted in Capture being acquired.</p>
+          </div>
+          <div class="project">
+            <h3>Topology</h3>
+            <p class="muted">Fashion Design • Product Design • Brand Design • Marketing • Operations</p>
+            <img class="mobile-hide" src="images/topology-1.jpg"><img src="images/topology-2.jpg">
+            <p>Along with a friend, I launched Topology, a direct-to-consumer brand that makes button-down shirts in the USA using unique Japanese fabrics. With no experience in fashion design or manufacturing, we sourced fabrics, found a manufacturer, and created 20 prototype shirts. After selling those in a of couple weeks, we decided to launch a full collection. We conducted customer research, figured out our supply chain, built an e-commerce site, took product and lifestyle photos, and launched and marketed the brand. A few hundred shirts later, we continue to operate Topology, you can visit us <a href="https://weartopology.com/" target="_blank">here.</a></p>
+          </div>
+          <div class="project">
+            <h3>Freelance projects</h3>
+            <p class="muted">Product Design • Brand Design</p>
+            <img class="mobile-hide" src="images/freelance-1.jpg"><img src="images/freelance-2.jpg">
+            <p>In my spare time, I've worked on freelance projects for various startups ranging from 2 person idea-stage "companies" to post-Series C businesses. I've worked on UX and UI, brand design, icons and illustrations, and marketing sites. If you're interested in working with me on a project, feel free to reach out.</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="work-section animated animated-delay-3 fadeInUp">
-      <div class="container animated animated-delay-4 halfFade">
-        <div class="col-4">
-          <img class="mb-24" src="images/bread.png">
-          <h3 class="mb-8">Bread Finance<span class="dates">&nbsp; • &nbsp;2016 to Present</span></h3>
-          <p class="mb-40">Building products that help retailers lift sales while providing transparency and a great user experience for borrowers.</p>
-        </div><div class="col-4">
-          <img class="mb-24" src="images/topology.png">
-          <h3 class="mb-8">Topology<span class="dates">&nbsp; • &nbsp;2014 to Present</span></h3>
-          <p class="mb-40">Launched a direct-to-consumer brand that makes button-down shirts in the USA using unique Japanese fabrics.</p>
-        </div><div class="col-4">
-          <img class="mb-24" src="images/capture.png">
-          <h3 class="mb-8">Capture<span class="dates">&nbsp; • &nbsp;2016</span></h3>
-          <p class="mb-40">Built products that helped networks like CNN and Buzzfeed search for social photos and videos in real-time.</p>
-        </div>
-      </div>
-    </section>
-    <section class="book-section animated animated-delay-4 fadeInUp">
+
+    <section id="about">
       <div class="container">
-        <h2 class="mb-8">My Recent Books</h2>
-        <p class="mb-24">I try to read whenever I get a chance (mostly while stuck on the subway). If you have any recommendations, let me know!</p>
-        <div class="date-divider">
-          <hr>
-          <h4>2018</h4>
-        </div>
-        <div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Tenth-December-Stories-George-Saunders/dp/0812984250"><img src="images/33.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/CivilWarLand-Bad-Decline-Stories-Novella/dp/0812987683"><img src="images/32.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Androids-Dream-Electric-Sheep-inspiration/dp/0345404475/"><img src="images/31.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Beloved-Toni-Morrison/dp/1400033411"><img src="images/30.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Janesville-American-Story-Amy-Goldstein/dp/1501102265"><img src="images/29.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Breakfast-Champions-Novel-Kurt-Vonnegut/dp/1501263374"><img src="images/28.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Pastoralia-George-Saunders/dp/1573228729"><img src="images/27.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Dreamland-True-Americas-Opiate-Epidemic/dp/1511336404"><img src="images/26.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Infinite-Jest-David-Foster-Wallace/dp/0316066524"><img src="images/25.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari/dp/0062316095"><img src="images/24.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Master-Margarita-Mikhail-Bulgakov/dp/0679760806"><img src="images/23.jpg"></a>
-        </div>
-        <div class="date-divider">
-          <hr>
-          <h4>2017</h4>
-        </div>
-        <div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Wool-Hugh-Howey/dp/1476733953" ><img src="images/22.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Rise-Robots-Technology-Threat-Jobless/dp/0465097537"><img src="images/21.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Cold-Blood-Truman-Capote/dp/0679745580"><img src="images/20.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Kafka-Shore-Haruki-Murakami/dp/1400079276"><img src="images/19-2.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Evicted-Poverty-Profit-American-City/dp/0553447459"><img src="images/19-1.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Hard-Boiled-Wonderland-End-World-International/dp/0679743464"><img src="images/19.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Shoe-Dog-Phil-Knight/dp/1508211809"><img src="images/18.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Wind-Up-Bird-Chronicle-Novel/dp/0679775439"><img src="images/17.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/New-Lombard-Street-Became-Dealer/dp/0691143986"><img src="images/16.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Three-Body-Problem-Cixin-Liu/dp/0765382032"><img src="images/15.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Unwinding-Inner-History-New-America/dp/0374534608"><img src="images/14.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Forever-War-Joe-Haldeman/dp/0312536631"><img src="images/13.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Guide-Good-Life-Ancient-Stoic/dp/0195374614"><img src="images/12.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/PayPal-Wars-Battles-Media-Planet/dp/1936488590"><img src="images/11.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Hillbilly-Elegy-Memoir-Family-Culture/dp/0062300547"><img src="images/10.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Death-Life-Great-American-Cities/dp/067974195X"><img src="images/09.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Big-Short-Inside-Doomsday-Machine/dp/0393338827"><img src="images/08.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Elon-Musk-SpaceX-Fantastic-Future/dp/006230125X"><img src="images/07.jpg"></a>
-        </div>
-        <div class="date-divider">
-          <hr>
-          <h4>2016</h4>
-        </div>
-        <div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Designing-Products-People-Love-Successful/dp/1491923679"><img src="images/06.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Invisible-Man-Ralph-Ellison/dp/0679732764"><img src="images/05.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Brief-History-Seven-Killings-Novel/dp/1594633940"><img src="images/04.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Little-Life-Hanya-Yanagihara/dp/0804172706"><img src="images/03.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Foundation-Isaac-Asimov/dp/0553293354"><img src="images/02.jpg"></a>
-        </div><div class="col-3">
-          <a target="_blank" href="https://www.amazon.com/Dune-Frank-Herbert/dp/0441172717"><img src="images/01.jpg"></a>
+        <div class="left animated fadeInUp animated-delay-1">
+          <h2>About me</h2>
+          <p>I grew up in the Midwest and studied economics at the University of Chicago before jumping into a career in finance in New York City. After a few hundred hours of staring at Excel models, I realized that I wanted to do something a bit more interesting and discovered the world of product design (with a lot of learning along the way). Since then, I’ve been lucky enough to work on interesting problems at companies ranging from 10 to 100,000+ employees.</p>
+          <div class="link-group">
+            <a target="_blank" href="https://dribbble.com/helloeric">Dribbble</a><a target="_blank" href="http://linkedin.com/in/erictli">LinkedIn</a>
+          </div>
+          <h4>Some things I've done</h4>
+          <p class="muted">Designed Web and Mobile Interfaces • Conducted Usability Tests • Conducted User Interviews • Designed and Analyzed Surveys • Managed the Implementation of Analytics Tools • Analyzed Product and Customer Data • Hired People • Created Icons and Illustrations • Run A/B Tests • Commited Production Code • Designed Marketing Websites • Managed People • Managed Products • Designed Brand and Marketing Materials • Built Financial Models • Helped Launch a Rebrand</p>
+        </div><div class="right animated fadeInUp animated-delay-1">
+          <h2>Judging books by their covers</h2>
+          <p>I try to read whenever I get a chance (mostly while stuck on the subway). Here’s what I’ve been reading recently. If you have any recommendations, let me know!</p>
+          <div class="date-divider">
+            <hr>
+            <h4>2018</h4>
+          </div>
+          <div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Brothers-Karamazov-Fyodor-Dostoevsky/dp/0374528373"><img src="images/35.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Competing-Against-Luck-Innovation-Customer/dp/0062435612"><img src="images/34.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Tenth-December-Stories-George-Saunders/dp/0812984250"><img src="images/33.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/CivilWarLand-Bad-Decline-Stories-Novella/dp/0812987683"><img src="images/32.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Androids-Dream-Electric-Sheep-inspiration/dp/0345404475/"><img src="images/31.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Beloved-Toni-Morrison/dp/1400033411"><img src="images/30.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Janesville-American-Story-Amy-Goldstein/dp/1501102265"><img src="images/29.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Breakfast-Champions-Novel-Kurt-Vonnegut/dp/1501263374"><img src="images/28.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Pastoralia-George-Saunders/dp/1573228729"><img src="images/27.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Dreamland-True-Americas-Opiate-Epidemic/dp/1511336404"><img src="images/26.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Infinite-Jest-David-Foster-Wallace/dp/0316066524"><img src="images/25.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari/dp/0062316095"><img src="images/24.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Master-Margarita-Mikhail-Bulgakov/dp/0679760806"><img src="images/23.jpg"></a>
+          </div>
+          <div class="date-divider">
+            <hr>
+            <h4>2017</h4>
+          </div>
+          <div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Wool-Hugh-Howey/dp/1476733953" ><img src="images/22.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Rise-Robots-Technology-Threat-Jobless/dp/0465097537"><img src="images/21.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Cold-Blood-Truman-Capote/dp/0679745580"><img src="images/20.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Kafka-Shore-Haruki-Murakami/dp/1400079276"><img src="images/19-2.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Evicted-Poverty-Profit-American-City/dp/0553447459"><img src="images/19-1.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Hard-Boiled-Wonderland-End-World-International/dp/0679743464"><img src="images/19.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Shoe-Dog-Phil-Knight/dp/1508211809"><img src="images/18.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Wind-Up-Bird-Chronicle-Novel/dp/0679775439"><img src="images/17.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/New-Lombard-Street-Became-Dealer/dp/0691143986"><img src="images/16.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Three-Body-Problem-Cixin-Liu/dp/0765382032"><img src="images/15.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Unwinding-Inner-History-New-America/dp/0374534608"><img src="images/14.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Forever-War-Joe-Haldeman/dp/0312536631"><img src="images/13.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Guide-Good-Life-Ancient-Stoic/dp/0195374614"><img src="images/12.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/PayPal-Wars-Battles-Media-Planet/dp/1936488590"><img src="images/11.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Hillbilly-Elegy-Memoir-Family-Culture/dp/0062300547"><img src="images/10.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Death-Life-Great-American-Cities/dp/067974195X"><img src="images/09.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Big-Short-Inside-Doomsday-Machine/dp/0393338827"><img src="images/08.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Elon-Musk-SpaceX-Fantastic-Future/dp/006230125X"><img src="images/07.jpg"></a>
+          </div>
+          <div class="date-divider">
+            <hr>
+            <h4>2016</h4>
+          </div>
+          <div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Designing-Products-People-Love-Successful/dp/1491923679"><img src="images/06.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Invisible-Man-Ralph-Ellison/dp/0679732764"><img src="images/05.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Brief-History-Seven-Killings-Novel/dp/1594633940"><img src="images/04.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Little-Life-Hanya-Yanagihara/dp/0804172706"><img src="images/03.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Foundation-Isaac-Asimov/dp/0553293354"><img src="images/02.jpg"></a>
+          </div><div class="col-3">
+            <a target="_blank" href="https://www.amazon.com/Dune-Frank-Herbert/dp/0441172717"><img src="images/01.jpg"></a>
+          </div>
         </div>
       </div>
     </section>
+    <section id="contact">
+      <div class="container">
+        <div class="contact-group animated fadeInUp animated-delay-1">
+          <p>The easiest way to get in touch is to email me at:</p>
+          <h1>hi@ericli.io</h1>
+          <p class="muted">You can also reach out to me on <a target="_blank" href="http://linkedin.com/in/erictli">LinkedIn</a>.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
   </body>
 </html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+  function switchToWork() {
+     $('body').css('background', '#D9E6FF');
+     $('.logo').css('color', '#0047D1');
+     $('.nav-link').css('color', '#0047D1');
+     $('#intro-link').css('border-bottom', 'solid 2px rgba(255,255,255,0)');
+     $('#work-link').css('border-bottom', 'solid 2px #0047D1');
+     $('#about-link').css('border-bottom', 'solid 2px rgba(255,255,255,0)');
+     $('#contact-link').css('border-bottom', 'solid 2px rgba(255,255,255,0)');
+     $("html, body").animate({ scrollTop: 0 }, "slow");
+     $('#intro').css('display', 'none');
+     $('#work').css('display', 'block');
+     $('#about').css('display', 'none');
+     $('#contact').css('display', 'none');
+  }
+  function switchToAbout() {
+     $('body').css('background', '#D9E6FF');
+     $('.logo').css('color', '#0047D1');
+     $('.nav-link').css('color', '#0047D1');
+     $('#intro-link').css('border-bottom', 'solid 2px rgba(255,255,255,0)');
+     $('#work-link').css('border-bottom', 'solid 2px rgba(255,255,255,0)');
+     $('#about-link').css('border-bottom', 'solid 2px #0047D1');
+     $('#contact-link').css('border-bottom', 'solid 2px rgba(255,255,255,0)');
+     $("html, body").animate({ scrollTop: 0 }, "slow");
+     $('#intro').css('display', 'none');
+     $('#work').css('display', 'none');
+     $('#about').css('display', 'block');
+     $('#contact').css('display', 'none');
+  }
+  function switchToContact() {
+     $('body').css('background', '#0047D1');
+     $('.logo').css('color', '#FFFFFF');
+     $('.nav-link').css('color', '#D9E6FF');
+     $('#intro-link').css('border-bottom', 'solid 2px rgba(255,255,255,0)');
+     $('#work-link').css('border-bottom', 'solid 2px rgba(255,255,255,0)');
+     $('#about-link').css('border-bottom', 'solid 2px rgba(255,255,255,0)');
+     $('#contact-link').css('border-bottom', 'solid 2px #D9E6FF');
+     $("html, body").animate({ scrollTop: 0 }, "slow");
+     $('#intro').css('display', 'none');
+     $('#work').css('display', 'none');
+     $('#about').css('display', 'none');
+     $('#contact').css('display', 'block');
+  }
+  function switchToIntro() {
+     $('body').css('background', '#0047D1');
+     $('.logo').css('color', '#FFFFFF');
+     $('.nav-link').css('color', '#D9E6FF');
+     $('#intro-link').css('border-bottom', 'solid 2px #D9E6FF');
+     $('#work-link').css('border-bottom', 'solid 2px rgba(255,255,255,0)');
+     $('#about-link').css('border-bottom', 'solid 2px rgba(255,255,255,0)');
+     $('#contact-link').css('border-bottom', 'solid 2px rgba(255,255,255,0)');
+     $("html, body").animate({ scrollTop: 0 }, "slow");
+     $('#intro').css('display', 'block');
+     $('#work').css('display', 'none');
+     $('#about').css('display', 'none');
+     $('#contact').css('display', 'none');
+  }
+</script>
