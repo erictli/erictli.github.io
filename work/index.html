@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eric Li Design</title>
+    <link rel="shortcut icon" href="../images/favicon.png">
+
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/portfolio.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600,600i" rel="stylesheet">
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-10942209-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+  </head>
+  <body>
+    <div id="work-page">
+      <section class="title-section">
+        <nav class="animated fadeIn animated-delay-3">
+          <div class="logo" onclick="switchToHome()"><strong>Eric Li</strong> Design<img src="../images/logo-cover.png"></div>
+          <ul>
+            <li class="nav-link nav-link-hidden" id="home-link" onclick="switchToHome()">Home</li>
+            <li class="nav-link" id="work-link" onclick="switchToWork()">Work</li>
+            <li class="nav-link" id="about-link" onclick="switchToAbout()">About</li>
+          </ul>
+        </nav>
+      </section>
+      <section class="body-section animated animated-delay-2 fadeInUp">
+        <div id="preview-checkout" class="work-preview">
+          <a class="preview-img" href="checkout/index.html"/><img src="../images/work-checkout.jpg"/></a><div class="work-text">
+              <h4>Case Study • Bread</h4>
+              <h2>Improving Bread’s Checkout Conversion Through Testing & Research</h2>
+              <a href="checkout/index.html">Learn More</a>
+          </div>
+        </div>
+        <div id="preview-payments" class="work-preview">
+          <a class="preview-img" href="payments/index.html"/><img src="../images/work-payment.jpg"/></a><div class="work-text">
+              <h4>Case Study • Bread</h4>
+              <h2>Creating A User-Centered Loan Repayment Experience</h2>
+              <a href="payments/index.html">Learn More</a>
+          </div>
+        </div>
+        <div id="preview-capture" class="work-preview">
+          <a class="preview-img" href="capture/index.html"/><img src="../images/work-capture.jpg"/></a><div class="work-text">
+              <h4>Portfolio • Capture</h4>
+              <h2>Helping Media Companies Search For Real-Time Social Content</h2>
+              <a href="capture/index.html">Learn More</a>
+          </div>
+        </div>
+        <div id="preview-other" class="work-preview">
+          <a class="preview-img" href="other/index.html"/><img src="../images/work-other.jpg"/></a><div class="work-text">
+              <h4>Portfolio • Other</h4>
+              <h2>Personal & Freelance Projects</h2>
+              <a href="other/index.html">Learn More</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+
+  function switchToHome() {
+     $('body').fadeOut(500);
+     setTimeout(function() {
+       $(location).attr('href',"../index.html");
+     }, 500);
+  }
+
+  function switchToAbout() {
+     $('body').fadeOut(500);
+     setTimeout(function() {
+       $(location).attr('href',"../about/index.html");
+     }, 500);
+  }
+
+  function switchToWork() {
+     $('body').fadeOut(500);
+     setTimeout(function() {
+       $(location).attr('href',"../work/index.html");
+     }, 500);
+  }
+
+</script>
