@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eric Li Design</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600,600i" rel="stylesheet">
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-10942209-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+  </head>
+  <body id="intro-body">
+    <div id="intro-page">
+      <section class="title-section">
+        <nav class="animated fadeIn animated-delay-3">
+          <div class="logo" onclick="switchToHome()"><strong>Eric Li</strong> Design<img src="images/logo-cover.png"></div>
+          <ul>
+            <li class="nav-link" id="home-link" onclick="switchToHome()">Home</li>
+            <li class="nav-link" id="work-link" onclick="switchToWork()">Work</li>
+            <li class="nav-link" id="about-link" onclick="switchToAbout()">About</li>
+          </ul>
+        </nav>
+      </section>
+      <section class="body-section animated">
+        <div class="left animated fadeInUp animated-delay-1 fadeInUp">
+          <h1>I help businesses design user-centric experiences and make data-driven product decisions.</h1>
+          <div>
+            <div class="meta"><img src="images/location.svg"><p>New York, NY</p></div>
+            <div class="meta"><img src="images/work.svg"><p>Bread</p></div>
+          </div>
+          <div class="button-group">
+            <a class="button" onclick="switchToWork()">See my work</a>
+            <a class="button button-secondary" onclick="switchToAbout()">Learn more</a>
+          </div>
+        </div><div class="right animated fadeInUp animated-delay-2 fadeInUp">
+          <img id="img-intro-laptop" class="animated infinite float-1" src="images/laptop-home.png">
+          <img id="img-intro-iphone" class="animated infinite float-2 animated-delay-2" src="images/iphone-home.png">
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+
+  function switchToHome() {
+     $('body').fadeOut(500);
+     setTimeout(function() {
+       $(location).attr('href',"/");
+     }, 500);
+  }
+
+  function switchToAbout() {
+     $('body').fadeOut(500);
+     setTimeout(function() {
+       $(location).attr('href',"about/");
+     }, 500);
+  }
+
+  function switchToWork() {
+     $('body').fadeOut(500);
+     setTimeout(function() {
+       $(location).attr('href',"work/");
+     }, 500);
+  }
+
+</script>

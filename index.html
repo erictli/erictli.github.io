@@ -9,9 +9,7 @@
     <link rel="shortcut icon" href="images/favicon.png">
 
     <link href="css/reset.css" rel="stylesheet">
-    <link href="css/portfolio.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600,600i" rel="stylesheet">
-
+    <link href="css/new.css" rel="stylesheet">
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -23,34 +21,27 @@
     </script>
 
   </head>
-  <body id="intro-body">
-    <div id="intro-page">
-      <section class="title-section">
-        <nav class="animated fadeIn animated-delay-3">
-          <div class="logo" onclick="switchToHome()"><strong>Eric Li</strong> Design<img src="images/logo-cover.png"></div>
-          <ul>
-            <li class="nav-link" id="home-link" onclick="switchToHome()">Home</li>
-            <li class="nav-link" id="work-link" onclick="switchToWork()">Work</li>
-            <li class="nav-link" id="about-link" onclick="switchToAbout()">About</li>
-          </ul>
-        </nav>
-      </section>
-      <section class="body-section animated">
-        <div class="left animated fadeInUp animated-delay-1 fadeInUp">
-          <h1>I help businesses design user-centric experiences and make data-driven product decisions.</h1>
-          <div>
-            <div class="meta"><img src="images/location.svg"><p>New York, NY</p></div>
-            <div class="meta"><img src="images/work.svg"><p>Bread</p></div>
+  <body>
+    <div class="header-container">
+      <div class="header">
+        <img class="header-img" src="images/header.png" />
+      </div>
+    </div>
+    <div class="body-container animated animated-delay-1 fadeIn">
+      <div class="flex">
+        <h1 class="title">Eric Li designs products that solve business and user problems.</h1>
+        <div class="body">
+          <p>I'm an investment-banker turned product designer based in New York City. I work on the <a target="_blank" href="https://www.ubereats.com/">Uber Eats</a> Marketplace Team where I work on dispatch, logistics, and pricing projects across our consumer, courier, and restaurant apps.</p>
+          <p>I studied economics at the University of Chicago and worked at J.P. Morgan covering tech and media companies. After growing tired of staring at spreadsheets all day (and night), I joined Sears where I led an innovation-focused product team. From there, I joined Capture where I designed a social-search product used by companies like CNN and The Washington Post. After Capture, I worked as the lead product designer at Bread where I designed easy-to-use financial products and helped grow the company from less than 20 to over 100 people.</p>
+          <div class="links">
+            <p><a href="mailto:hi@ericli.io">hi@ericli.io</a></p>
+            <p><a target="_blank" href="https://www.linkedin.com/in/erictli/">LinkedIn</a></p>
+            <p><a target="_blank" href="https://dribbble.com/helloeric">Dribbble</a></p>
           </div>
-          <div class="button-group">
-            <a class="button" onclick="switchToWork()">See my work</a>
-            <a class="button button-secondary" onclick="switchToAbout()">Learn more</a>
-          </div>
-        </div><div class="right animated fadeInUp animated-delay-2 fadeInUp">
-          <img id="img-intro-laptop" class="animated infinite float-1" src="images/laptop-home.png">
-          <img id="img-intro-iphone" class="animated infinite float-2 animated-delay-2" src="images/iphone-home.png">
         </div>
-      </section>
+      </div>
+    </div>
+
     </div>
   </body>
 </html>
@@ -58,25 +49,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
 
-  function switchToHome() {
-     $('body').fadeOut(500);
-     setTimeout(function() {
-       $(location).attr('href',"/");
-     }, 500);
-  }
-
-  function switchToAbout() {
-     $('body').fadeOut(500);
-     setTimeout(function() {
-       $(location).attr('href',"about/");
-     }, 500);
-  }
-
-  function switchToWork() {
-     $('body').fadeOut(500);
-     setTimeout(function() {
-       $(location).attr('href',"work/");
-     }, 500);
-  }
+$(window).scroll(function(){
+    $(".header-container").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
 
 </script>

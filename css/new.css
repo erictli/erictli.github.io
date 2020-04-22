@@ -1,0 +1,222 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*background: linear-gradient(270deg, rgba(225, 72, 172, .1), rgba(72, 156, 225, .1), rgba(109, 72, 225, .1));
+  background-size: 1000% 1000%;
+  -webkit-animation: backgroundGradient 200s ease infinite;
+  -moz-animation: backgroundGradient 200s ease infinite;
+  animation: backgroundGradient 200s ease infinite;*/
+  background: #000;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: #fff;
+  background: #000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  overflow-x: hidden;
+  transition: background-color .8s, background-gradient .8s, color 0s;
+}
+
+.header-container {
+  width: 1280px;
+  margin: 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header {
+  background: linear-gradient(180deg, #ABCAEE, #96A8D8, #C8A2C6, #8F7DB6, #6E6A97);
+  background-size: 100% 600%;
+  -webkit-animation: backgroundGradient 80s ease infinite;
+  -moz-animation: backgroundGradient 80s ease infinite;
+  animation: backgroundGradient 80s ease infinite;
+}
+
+.header-img {
+  width: 102%;
+  vertical-align: top;
+}
+
+.body-container {
+  padding: 72px 48px 160px;
+  margin: 360px auto 0;
+  text-align: left;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  justify-content: left;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.title {
+  flex-basis: 38%;
+  padding-right: 40px;
+}
+
+.body {
+  flex-basis: 62%;
+}
+
+.links {
+  margin-top: 40px;
+}
+
+.links p {
+  display: inline-block;
+  margin-right: 32px;
+}
+
+.links a {
+  border-bottom: 2px solid #FFF;
+  padding-bottom: 5px;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 50px;
+  margin-bottom: 32px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+a {
+  font-weight: 600;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a:hover {
+  opacity: 0.3;
+}
+
+
+/* Breakpoints */
+@media screen and (max-width: 1120px) {
+  .header-container {
+    margin-left: -15%;
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .header-container {
+    margin-left: -30%;
+  }
+  .flex {
+    display: block;
+    max-width: 720px;
+  }
+  .title {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .header-container {
+    margin-left: -40%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .header-container {
+    margin-left: -50%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .header-container {
+    margin-left: -80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-container {
+    margin-left: -110%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .header-container {
+    margin-left: -140%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .header-container {
+    margin-left: -170%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header-container {
+    margin-left: -200%;
+  }
+}
+
+
+
+/* Animations */
+
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.animated-delay {
+  -webkit-animation-delay: 0.5s; /* Chrome, Safari, Opera */
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes backgroundGradient {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes backgroundGradient {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes backgroundGradient {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
