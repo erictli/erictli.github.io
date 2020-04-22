@@ -2,11 +2,6 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /*background: linear-gradient(270deg, rgba(225, 72, 172, .1), rgba(72, 156, 225, .1), rgba(109, 72, 225, .1));
-  background-size: 1000% 1000%;
-  -webkit-animation: backgroundGradient 200s ease infinite;
-  -moz-animation: backgroundGradient 200s ease infinite;
-  animation: backgroundGradient 200s ease infinite;*/
   background: #000;
 }
 
@@ -40,11 +35,11 @@ body {
 }
 
 .header {
-  background: linear-gradient(180deg, #ABCAEE, #96A8D8, #C8A2C6, #8F7DB6, #6E6A97);
-  background-size: 100% 600%;
-  -webkit-animation: backgroundGradient 80s ease infinite;
-  -moz-animation: backgroundGradient 80s ease infinite;
-  animation: backgroundGradient 80s ease infinite;
+  background: linear-gradient(180deg, #ABCAEE, #C8A2C6, #8878AA);
+  background-size: 100% 400%;
+  -webkit-animation: backgroundGradient 60s ease infinite;
+  -moz-animation: backgroundGradient 60s ease infinite;
+  animation: backgroundGradient 60s ease infinite;
 }
 
 .header-img {
@@ -177,8 +172,6 @@ a:hover {
   }
 }
 
-
-
 /* Animations */
 
 .animated {
@@ -187,7 +180,7 @@ a:hover {
 }
 
 .animated-delay {
-  -webkit-animation-delay: 0.5s; /* Chrome, Safari, Opera */
+  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 
