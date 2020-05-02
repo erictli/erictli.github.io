@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eric Li Design</title>
+    <link rel="shortcut icon" href="../../images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="../../css/reset.css" rel="stylesheet">
+    <link href="../../css/new.css" rel="stylesheet">
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-10942209-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+  </head>
+  <body class="portfolio" id="predictions">
+    <section class="header-section">
+      <div class="left">
+        <div class="profile">
+          <img src="../../images/profile.png" />
+        </div>
+        <a class="email" href="mailto:hi@ericli.io">hi@ericli.io</a>
+      </div>
+      <div class="right">
+        <a href="../">Work</a>
+        <a target="_blank" href="../../">About</a>
+      </div>
+    </section>
+    <div class="portfolio-content">
+      <section class="portfolio-header">
+        <div class="title-container">
+          <p class="tag">Uber Eats • Case Study</p>
+          <h1 class="title">Reducing courier wait time by improving the Uber Eats restaurant dashboard</h1>
+        </div>
+        <div class="img-container">
+          <div class="img-header" id="prediction-header" >
+            <img class="p-img" src="../../images/predictions/p-header.gif" />
+          </div>
+        </div>
+      </section>
+      <div class="text-container">
+        <h3>The opportunity</h3>
+        <p>On average, our couriers wait at restaurants for over 5 minutes per order. This wait time is expensive, adding up to hundreds of millions of dollars per year. Reducing average wait times by just 1 second could save millions of dollars.
+      </div>
+      <div class="img-container">
+        <div class="img-inline">
+          <img class="p-img" src="../../images/predictions/p-diagram.png" />
+        </div>
+      </div>
+      <div class="text-container">
+        <h3>Starting in the field</h3>
+        <p>Today, we have a machine-learning model that uses dozens of signals to predict when to send couriers to pickup food. When we're wrong, couriers and food end up waiting. The main way that restaurants can interact with our predictions is through our restaurant dashboard tablet. We tell restaurants when food is due and allow restaurants to delay orders through our help panel.</p>
+        <p>In order to understand the causes of wait time, we conducted field research with restaurants in Chicago and London. Through research, we wanted to understand how restaurants were interacting with our predictions and tablet features. We also wanted to better understand what factors caused variation in restaurant prep times and whether these were captured in our models. I worked with our researcher, product manager, and data scientists to define research objectives, write a research script, and conduct interviews.</p>
+      </div>
+      <div class="img-container">
+        <div class="img-half">
+          <img class="p-img" src="../../images/predictions/p-photo1.png" />
+          <p class="caption">The times we show on our order cards confused users.</p>
+        </div>
+        <div class="img-half">
+          <img class="p-img" src="../../images/predictions/p-photo2.png" />
+          <p class="caption">Our tablet is often one of many things that require attention.</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>Through our research, we identified three key opportunities:</p>
+        <ul class="mb-48">
+          <li>Restaurants have low awareness of when couriers will arrive because the way we display times isn't clear → <strong>How might we improve pickup time comprehension by redesigning our order cards?</strong></li>
+          <li>Some restaurants didn't know that they could delay orders while others overused delays because they weren't aware of the consequences → <strong>How might we make delays discoverable while discouraging overuse?</strong></li>
+          <li>"Busyness" is the main cause of delays but is hard for us to predict or detect (e.g. a large dine-in group, orders on competitor apps) → <strong>How might we enable restaurants to provide us with real-time busyness signals?</strong></li>
+        </ul>
+        <h3>More informative order cards</h3>
+        <p>In order to adhere to pickup times, restuarants needed to be aware of them. Thus, it was very important that we improved the clarity and consistency of the times that we showed restaurants throughout the experience.</p>
+        <p>During our field research, we started putting concepts in front of users. We showed users multiple order cards variations and  found that all restaurants preferred countdown times over clock times and better understood cards with labels and integrated courier information.</p>
+      </div>
+      <div class="img-container">
+        <div class="img-full">
+          <img class="p-img" src="../../images/predictions/p-testing.png" />
+          <p class="caption">The time display variations we tested with users. All users preferred the last version.</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>From there, I broadly explored concepts for re-imaging our order and courier card layout. Through reviews with product, engineering, and other designers, we refined our concepts down to a final version that solved the problems we discovered in research:</p>
+        <ul>
+          <li>We previously messaged both static "due times" as well as real-time courier pick up times. We decided to switch to a single system of always showing our best guess of the pick up time. </li>
+          <li>We improved the clarity of pickup times by moving from clock to countdown times and adding labels and visual states that communicated the urgency and status of orders at a glance. We also reduced rendundancy and clutter in the UI by integrating our courier and order cards.</li>
+          <li>We added new statuses (e.g. courier waiting) and removed statuses that were confusing (e.g. courier late).</li>
+        </ul>
+      </div>
+      <div class="img-container">
+        <div class="img-half">
+          <img class="p-img" src="../../images/predictions/p-before.png" />
+          <p class="caption">A "typical" case in our old designs.</p>
+        </div>
+        <div class="img-half">
+          <img class="p-img" src="../../images/predictions/p-after.png" />
+          <p class="caption">A "typical" case in our updated designs.</p>
+        </div>
+        <div class="img-half">
+          <img class="p-img" src="../../images/predictions/p-before-complex.png" />
+          <p class="caption">A "complex" case in our old designs. Delivery types and batched orders were particularly hard to understand.</p>
+        </div>
+        <div class="img-half">
+          <img class="p-img" src="../../images/predictions/p-after-complex.png" />
+          <p class="caption">A "complex" case in our updated designs. We made platform improvements to how delivery types were labeled.</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>In addition to making changes that supported our goal of reducing courier wait times, we also made a number of improvements to the platform and design system. We made improvements to the way order types were labeled (e.g. pickup, delivery, bring your own courier, catering) and also improved labeling of batched orders. I also collaborated with our restaurant platform designers to get buy in on improvements to our design system that aligned our dated restaurant dashboard with the broader Uber design system.</p>
+      </div>
+      <div class="img-container">
+        <div class="img-full">
+          <img class="p-img" src="../../images/predictions/p-map.png" />
+          <p class="caption">Some of the edge cases and order states that our redesign needed to address.</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <h3>Improvements to order delays</h3>
+        <p>In addition to improving pickup time clarity, we also wanted to improve the discoverability of our order delay feature while improving the content and UX to encourage responsible delays.</p>
+      </div>
+      <div class="img-container">
+        <div class="img-full">
+          <img class="p-img" src="../../images/predictions/p-delay.png" />
+          <p class="caption">Previously, our order delays were hidden in the help menu. It was also easy for restaurants to delay orders for longer than they needed.</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>We added an entrypoint to the header of our order details modal and updated our order delay UX to use a stepper pattern. We also reframed our time messaging to focus on total prep time instead of additive time. Finally, we added dynamic messaging that increased in severity as the user delayed for longer. While we had previously hidden the feature to prevent abuse, we instead wanted to add an appropriate amount of friction and feedback to long delays to make sure they are intentional.</p>
+      </div>
+      <div class="img-container">
+        <div class="img-half">
+          <img class="p-img" src="../../images/predictions/p-delay-new-1.png" />
+          <p class="caption">Adding an entrypoint to delays from the order detail page.</p>
+        </div>
+        <div class="img-half">
+          <img class="p-img" src="../../images/predictions/p-delay-new-2.png" />
+          <p class="caption">Delays are adjusted using a stepper.</p>
+        </div>
+        <div class="img-half">
+          <img class="p-img" src="../../images/predictions/p-delay-new-3.png" />
+          <p class="caption">We show feedback as users add time.</p>
+        </div>
+        <div class="img-half">
+          <img class="p-img" src="../../images/predictions/p-delay-new-4.png" />
+          <p class="caption">Feedback becomes more prominent for longer delays.</p>
+        </div>
+        <div class="img-half">
+          <img class="p-img" src="../../images/predictions/p-delay-new-5.png" />
+          <p class="caption">In cases where users delay too frequently, we provide additional warnings.</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <h3>Accounting for unpredicted busyness</h3>
+        <p>Finally, to account for unpredicted delays, we also introduced a feature that allows restuarants to indicate how busy they are. [Balance between delays and mistakes that will cause delivery times to go up across the board. Entrypoint next to pause - get people to go from pausing to busy mode. Limitations on busymode time. Busy mode indicator. Navigation improvements (for later).]</p>
+      </div>
+      <div class="img-container">
+        <div class="img-half">
+          <img class="p-img" src="../../images/predictions/p-busy-1.png" />
+          <p class="caption">The existing version of our restaurant dashboard.</p>
+        </div>
+        <div class="img-half">
+          <img class="p-img" src="../../images/predictions/p-busy-2.png" />
+          <p class="caption">The existing version of our restaurant dashboard.</p>
+        </div>
+        <div class="img-half">
+          <img class="p-img" src="../../images/predictions/p-busy-3.png" />
+          <p class="caption">The existing version of our restaurant dashboard.</p>
+        </div>
+        <div class="img-half">
+          <img class="p-img" src="../../images/predictions/p-busy-4.png" />
+          <p class="caption">The existing version of our restaurant dashboard.</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <h3>Next steps</h3>
+        <p>At the moment these features are in development and we're preparing for launch. We'll want to evaluate how the features impact marketplace metrics including wait time, average delivery times, and restaurant and courier feedback.</p>
+        <p>We also see further opportunities to better handle batched orders, encourage responsible usage of the ready button, communicate order status to couriers, and make additional UX changes to our tablet to improve workflow efficiency.</p>
+      </div>
+      <div class="text-container link-container">
+        <a class="back-link" href="../">Back To All Work</a>
+      </div>
+    </div>
+  </body>
+</html>

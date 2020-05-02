@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eric Li Design</title>
+    <link rel="shortcut icon" href="../../images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="../../css/reset.css" rel="stylesheet">
+    <link href="../../css/new.css" rel="stylesheet">
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-10942209-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+  </head>
+  <body class="portfolio" id="ordering">
+    <section class="header-section">
+      <div class="left">
+        <div class="profile">
+          <img src="../../images/profile.png" />
+        </div>
+        <a class="email" href="mailto:hi@ericli.io">hi@ericli.io</a>
+      </div>
+      <div class="right">
+        <a href="../">Work</a>
+        <a target="_blank" href="../../">About</a>
+      </div>
+    </section>
+    <div class="portfolio-content">
+      <section class="portfolio-header">
+        <div class="title-container">
+          <p class="tag">Uber Eats • Case Study</p>
+          <h1 class="title">Enabling Uber Eats users to order from multiple restaurants in one delivery</h1>
+        </div>
+        <div class="img-container">
+          <div class="img-header" id="ordering-header" >
+            <img class="p-img" src="../../images/ordering/o-header.png" />
+          </div>
+        </div>
+      </section>
+      <div class="text-container">
+        <h3>The opportunity</h3>
+        <p>When ordering food delivery, we often need to compromise. Maybe you want sushi when your husband wants a salad or perhaps you want to add a coffee to your lunch. Most often, users end up compromising and ordering from just one spot.</p>
+        <p class="mb-48">At the same time, Uber aims to grow order volume at positive economics. One of the ways that we can do this is by increasing basket size, and over the long term, driving increased engagement through new use cases.</p>
+        <h3>Starting with an idea</h3>
+        <p>The idea of multi-restaurant ordering had been floating around the company for a while. During a brainstorming session with product and engineering, we decided to start sketching out how we could make this happen. We had recently launched the ability to batch orders between restaurants (we dispatch a courier to pick up orders from separate restuarants in one trip). Could we viably extend this to allowing users to order from multiple restaurants?</p>
+      </div>
+      <div class="img-container">
+        <div class="img-inline">
+          <img class="p-img" src="../../images/ordering/o-concepts.png" />
+          <p class="caption">Some initial concepts we used to sell the feature to stakeholders.</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>I worked with our product, analytics, and engineering leads to scope, evaluate, and pitch the project. We estimated that we could maintain positive unit ecomomics for the feature while offering sufficient restaurant selection and a delivery discount. We also found that no major competitors were offering this feature and it was opportunity for Eats to differentiate itself. Interestingly, we also found that a small but meaningful subset of users were already placing concurrent orders as separate deliveries. In parallel, I began to take the lead on scoping the experiential components of the feature.</p>
+      </div>
+      <div class="img-container">
+        <div class="img-inline">
+          <img class="p-img" src="../../images/ordering/o-scoping.png" />
+          <p class="caption">We began to scope the feature to assess engineering lift and cross-team dependencies.</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <h3>Landing on an MVP</h3>
+        <p>After getting buy in from leadership to build the feature, I began to explore different approaches. We considered adding an entrypoint to all restaurants, limiting the feature to a select number of restaurants in a homepage carousel, and upselling add-ons after the user placed their initial orders.</p>
+      </div>
+      <div class="img-container">
+        <div class="img-full">
+          <img class="p-img" src="../../images/ordering/o-wireframes.png" />
+          <p class="caption">The time display variations we tested with users. All users preferred the last version.</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>User research. Upsell too limited in use cases. Talking to the Eats app team, too much risk and complexity in introducing the feature across all restaurants. Decided on a focused carousel approach - best way to evaluate interest in the value proposition and prove out our logistics and unit economics assumptions..</p>
+      </div>
+      <div class="img-container">
+        <div class="img-half">
+          <img class="p-img" src="../../images/ordering/o-test1.png" />
+          <p class="caption">The time display variations we tested with users. All users preferred the last version.</p>
+        </div>
+        <div class="img-half">
+          <img class="p-img" src="../../images/ordering/o-test2.png" />
+          <p class="caption">The time display variations we tested with users. All users preferred the last version.</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <h3>Executing on the consumer and courier experienes</h3>
+        <p>Lot of potential scope. Required a lot of alignment with product managers and designers across our platform, ordering, delivery experience, tipping and ratings, and courier teams. Some things we considered.</p>
+        <ul>
+          <li>Ordering experience. Naming and positioning.</li>
+          <li>Checkout experience. Working in new cart. How fees and promotions work.</li>
+          <li>Delivery experience. Agressively prioritize and leveraged existing components. Compromised in areas that weren't core - we weren't able to create a combined delivery experience due to technical limitations where we needed to the treat the delivery as two separate orders. Settled on copy changes and using banners to notify users how delivery would work. Edge cases where we aren't able to deliver with a single courier.</li>
+          <li>Tipping and cancellation experience. Needed to define new logic and edge cases.</li>
+          <li>Courier experience - modifications to the existing multi-restaurant batching experience</li>
+        </ul>
+      </div>
+      <div class="img-container">
+        <div class="img-inline">
+          <img class="p-img" src="../../images/ordering/o-flow1.png" />
+          <p class="caption">A "typical" case in our old designs.</p>
+        </div>
+        <div class="img-inline">
+          <img class="p-img" src="../../images/ordering/o-flow2.png" />
+          <p class="caption">A "typical" case in our old designs.</p>
+        </div>
+        <div class="img-inline">
+          <img class="p-img" src="../../images/ordering/o-flow3.png" />
+          <p class="caption">A "typical" case in our old designs.</p>
+        </div>
+        <div class="img-inline">
+          <img class="p-img" src="../../images/ordering/o-flow4-1.png" />
+          <p class="caption">A "typical" case in our old designs.</p>
+        </div>
+        <div class="img-inline">
+          <img class="p-img" src="../../images/ordering/o-flow5.png" />
+          <p class="caption">A "typical" case in our old designs.</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <h3>Next steps</h3>
+        <p>Expanding beyond food. Cross-category orders. Rolling out broadly across food - introducing subtle entrypoints on all restaurant pages, introducing filter / category in order discovery flow. Improving the delivery experience.</p>
+      </div>
+      <div class="img-container">
+        <div class="img-full">
+          <img class="p-img" src="../../images/ordering/o-full.png" />
+          <p class="caption">Some of the edge cases and order states that our redesign needed to address.</p>
+        </div>
+      </div>
+      <div class="text-container link-container">
+        <a class="back-link" href="../">Back To All Work</a>
+      </div>
+    </div>
+  </body>
+</html>

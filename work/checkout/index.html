@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,11 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Eric Li Design</title>
     <link rel="shortcut icon" href="../../images/favicon.png">
-
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;&display=swap" rel="stylesheet">
     <link href="../../css/reset.css" rel="stylesheet">
-    <link href="../../css/portfolio.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600,600i" rel="stylesheet">
-
+    <link href="../../css/new.css" rel="stylesheet">
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -22,138 +21,131 @@
     </script>
 
   </head>
-  <body>
-    <div id="checkout-page">
-      <section class="title-section">
-        <nav class="animated fadeIn animated-delay-4">
-          <div class="logo" onclick="switchToHome()"><strong>Eric Li</strong> Design<img src="../../images/logo-cover.png"></div>
-          <ul>
-            <li class="nav-link" id="home-link" onclick="switchToHome()">Home</li>
-            <li class="nav-link" id="work-link" onclick="switchToWork()">Work</li>
-            <li class="nav-link" id="about-link" onclick="switchToAbout()">About</li>
-          </ul>
-        </nav>
-        <div class="text-container">
-          <p class="tag-text animated-slow fadeIn">Case Study • Bread</p>
-          <h1 class="animated animated-delay-1 fadeInUp">Improving Bread’s checkout conversion through testing & research</h1>
-          <p class="meta-text animated animated-delay-2 fadeInUp">Analytics &nbsp;• &nbsp;User Research &nbsp;• &nbsp;Interaction Design &nbsp;• &nbsp;Product Strategy</p>
+  <body class="portfolio" id="checkout">
+    <section class="header-section">
+      <div class="left">
+        <div class="profile">
+          <img src="../../images/profile.png" />
         </div>
-        <div class="img-container animated animated-delay-3 fadeInUp">
-          <img src="../../images/checkout-header.png">
+        <a class="email" href="mailto:hi@ericli.io">hi@ericli.io</a>
+      </div>
+      <div class="right">
+        <a href="../">Work</a>
+        <a target="_blank" href="../../">About</a>
+      </div>
+    </section>
+    <div class="portfolio-content">
+      <section class="portfolio-header">
+        <div class="title-container">
+          <p class="tag">Bread • Case Study</p>
+          <h1 class="title">Improving Bread’s checkout conversion through testing & research</h1>
+        </div>
+        <div class="img-container">
+          <div class="img-header" >
+            <img class="p-img" src="../../images/checkout-header.png" />
+          </div>
         </div>
       </section>
-      <section class="body-section animated animated-delay-4 fadeInUp">
-        <div class="text-container">
-          <p class="tldr">tl;dr: I worked with the product and engineering teams at Bread to identify and launch improvements to our financing checkout that led to measurable improvements in conversion.</p>
-          <p>Bread partners with retailers to offer an easy and transparent way for shoppers to pay monthly for their large purchases. When a shopper visits a retailer’s website, their first and most important interaction with Bread is with our checkout. Any increase or decrease in checkout conversion rate has a meaningful impact on our revenue and the revenue of our retail partners. So, throughout my time at Bread, we worked on a number of initiatives aimed at improving our checkout conversion and also leveled-up our testing and research practices along the way.</p>
-          <h2>Taking a step back to understand the problem</h2>
-          <p>When I joined Bread, one of the first things I wanted to understand was how and why shoppers used Bread to pay for their purchases. At the time, we were a company of less than 20 employees and hadn’t done any research to understand our end-users nor had we set up proper product analytics. To begin to identify opportunities for improvement in our checkout, we did a few things before jumping into solutioning. </p>
-          <h3>Setting up product analytics to understand user behavior.</h3>
-          <p>One of the most powerful ways to understand of how people are using a product is to look at data. With proper reporting, we can easily answer questions like “Where are customers dropping out of our checkout?”, or “how often are customers viewing the details of our credit terms?. Without it, we can only guess.</p>
-          <p>When I started working on our checkout, we weren’t able to track most user actions and our reporting was nonexistent. We were using a tool called Heap to automatically capture interactions in our funnel (such as some clicks on buttons or changes to form fields). However, because of the way our checkout was built, many events weren’t being captured accurately or at all. I worked with a product manager and engineer to map out the flows and steps that we wanted to measure, push changes to our code to capture missing events, and set up reporting.</p>
+      <div class="text-container">
+        <p class="tldr"><strong>tl;dr:</strong> I worked with the product and engineering teams at Bread to identify and launch improvements to our financing checkout that led to measurable improvements in conversion.</p>
+        <h3>Overview</h3>
+        <p class="mb-48">Bread partners with retailers to offer an easy and transparent way for shoppers to pay monthly for their large purchases. When a shopper visits a retailer’s website, their first and most important interaction with Bread is with our checkout. Any increase or decrease in checkout conversion rate has a meaningful impact on our revenue and the revenue of our retail partners. So, throughout my time at Bread, we worked on a number of initiatives aimed at improving our checkout conversion and also leveled-up our testing and research practices along the way.</p>
+        <h3>Taking a step back to understand the problem</h3>
+        <p>When I joined Bread, one of the first things I wanted to understand was how and why shoppers used Bread to pay for their purchases. At the time, we were a company of less than 20 employees and hadn’t done any research to understand our end-users nor had we set up proper product analytics. To begin to identify opportunities for improvement in our checkout, we did a few things before jumping into solutioning. </p>
+        <p><strong>Setting up product analytics to understand user behavior.</strong></p>
+        <p>One of the most powerful ways to understand of how people are using a product is to look at data. With proper reporting, we can easily answer questions like “Where are customers dropping out of our checkout?”, or “how often are customers viewing the details of our credit terms?. Without it, we can only guess.</p>
+        <p>When I started working on our checkout, we weren’t able to track most user actions and our reporting was nonexistent. We were using a tool called Heap to automatically capture interactions in our funnel (such as some clicks on buttons or changes to form fields). However, because of the way our checkout was built, many events weren’t being captured accurately or at all. I worked with a product manager and engineer to map out the flows and steps that we wanted to measure, push changes to our code to capture missing events, and set up reporting.</p>
+      </div>
+      <div class="img-container">
+        <div class="img-full">
+          <img class="p-img" src="../../images/checkout-map.jpg" />
+          <p class="caption">In addition to mapping out our checkout in our analytics tools, we also created a visual map showing the different paths a user could take during their checkout journey..</p>
         </div>
-        <div class="img-container">
-          <img src="../../images/checkout-map.jpg">
-          <p class="img-caption">In addition to mapping out our checkout in our analytics tools, we also created a visual map showing the different paths a user could take during their checkout journey.</p>
+      </div>
+      <div class="text-container">
+        <p>From these reports we began to identify areas in our funnel that we wanted to further investigate. First, a large portion of users who saw our application dropped off before even beginning to enter information into our form. Second, many users abandoned after being approved - many of them dropping after they had already chosen a financing plan and made it to the review page.</p>
+      </div>
+      <div class="img-container">
+        <div class="img-inline">
+          <img class="p-img" src="../../images/checkout-01.jpg" />
+          <p class="caption">What our old checkout experience looked like. It opens up as a modal on top of a retailer’s site - usually from the retailer's product detail page, cart, or checkout.</p>
         </div>
-        <div class="text-container">
-          <p>From these reports we began to identify areas in our funnel that we wanted to further investigate. First, a large portion of users who saw our application dropped off before even beginning to enter information into our form. Second, many users abandoned after being approved - many of them dropping after they had already chosen a financing plan and made it to the review page.</p>
+      </div>
+      <div class="text-container">
+        <p><strong>Conducting surveys, interviews, and usability tests to understand the “why”.</strong></p>
+        <p>To better hone in on the opportunities we saw from the data, we conducted small qualititative studies with Bread customers and non-customers.</p>
+        <p>First, we surveyed and interviewed Bread users who had recently checked out with Bread. Because our customers were a very different demographic than our employees and we had never done qualitative user research before, we also took the opportunity to understand the customers’ general shopping journeys and approaches towards payments and financing. These interviews ended up being most useful in helping us improve our payments experience (more on that <a href="../payments/" target="_blank">here</a>) and for building a more user-centered mindset across the company. However, we also better able to understand why customers were choosing financing and what factors were important to them in deciding how to pay for something.</p>
+        <p>Additionally, we conducted usability testing on our existing product, which proved insightful. We ran 6 remote tests with non-customers where we asked users to go through the process of checking out with financing on a large purchase. Through this testing, we saw two clear patterns that led us to focus on improving our approved customer experience.</p>
+      </div>
+      <div class="img-container">
+        <div class="img-full">
+          <img class="p-img" src="../../images/checkout-02.jpg" />
+          <p class="caption">The old two-part terms page that our approved users saw. Users could click the “Compare Plans” button to view the second page, which contained details about the financing plan. If a user clicked on a plan instead, they would proceed to our shipping and review pages.</p>
         </div>
-        <div class="img-container">
-          <img src="../../images/checkout-01.jpg">
-          <p class="img-caption">What our old checkout experience looked like. It opens up as a modal on top of a retailer’s site - usually from the retailer's product detail page, cart, or checkout.</p>
+      </div>
+      <div class="text-container">
+        <p>5 of 6 users commented that our application page was simple. In contrast, all 6 customers had issues with our approved terms page. Specifically, all users said they expected to click on one of the loan options to see more details about the plan when, in fact, there was no clear information about the loan on the next page. 5 users also mentioned that they really liked the transparency of information on the compare page. However only half of participants even noticed the “Compare Plans” button.</p>
+        <p class="mb-48">To us, these results pointed towards an opportunity to improve our terms page. Based on both the data and qualitative results, we hypothesized that the two-page experience was causing users to miss the information they needed to decide whether or not to use Bread.</p>
+        <h3>Getting to our first A/B test</h3>
+        <p>Looking at data and speaking to users about hypothetical decisions helped to build confidence that we were looking at the right problems, however the only way to truly understand whether a new interface improves conversion is to test with real customers who are shopping with their own money. Because we were talking about making changes to one of most important areas of product, we quickly decided that we needed to run an A/B test.</p>
+        <p>In parallel with our research, we had started ideating on and prototyping potential improvements to our checkout. We started off with a broad exploaration across the funnel but, as we learned more, we began to narrow our focus on our terms pages.</p>
+      </div>
+      <div class="img-container">
+        <div class="img-full">
+          <img class="p-img" src="../../images/checkout-03.jpg" />
+          <p class="caption">Examples of early checkout design explorations with white-labeled retailer branding.</p>
         </div>
-        <div class="text-container">
-          <h3>Conducting surveys, interviews, and usability tests to understand the “why”.</h3>
-          <p>To better hone in on the opportunities we saw from the data, we conducted small qualititative studies with Bread customers and non-customers.</p>
-          <p>First, we surveyed and interviewed Bread users who had recently checked out with Bread. Because our customers were a very different demographic than our employees and we had never done qualitative user research before, we also took the opportunity to understand the customers’ general shopping journeys and approaches towards payments and financing. These interviews ended up being most useful in helping us improve our payments experience (more on that <a href="../payments/" target="_blank">here</a>) and for building a more user-centered mindset across the company. However, we also better able to understand why customers were choosing financing and what factors were important to them in deciding how to pay for something.</p>
-          <p>Additionally, we conducted usability testing on our existing product, which proved insightful. We ran 6 remote tests with non-customers where we asked users to go through the process of checking out with financing on a large purchase. Through this testing, we saw two clear patterns that led us to focus on improving our approved customer experience.</p>
+      </div>
+      <div class="text-container">
+        <p>As we worked through designs for the terms page, we prioritized our work based on a few constraints and guiding principles.</p>
+        <p>First, the post-application funnel of our product is complicated with a number of possibilities. The experience varies based on options that the merchant configures (our checkout product is often white-labeled), the credit quality of the customer (e.g. various approval and denial status), and where on the merchant's site a user applied. Our designs needed to account for all of these scenarios.</p>
+      </div>
+      <div class="img-container">
+        <div class="img-full">
+          <img class="p-img" src="../../images/checkout-04.jpg" />
+          <p class="caption">Some examples of terms page edge cases for down payments, different numbers of terms, and conditional approvals.</p>
         </div>
-        <div class="img-container">
-          <img src="../../images/checkout-02.jpg">
-          <p class="img-caption">The old two-part terms page that our approved users saw. Users could click the “Compare Plans” button to view the second page, which contained details about the financing plan. If a user clicked on a plan instead, they would proceed to our shipping and review pages.</p>
+      </div>
+      <div class="text-container">
+        <p>Second, while we explored many visual styles, we didn’t want to make sweeping changes and redesign entire checkout in this test. Nothing in our research indicated that visual design was a problem so we decided to save that for future prioritization. We cleaned things up as we touched them (e.g. removing off-brand illustrations, establishing clearer visual hierarchy) but held ourselves back from a redesign of our entire UI.</p>
+        <p>Finally, we focused on generating results. The changes we made were informed by user research and we prioritized the areas that were most likely to have a positive impact. For example, our data showed us that the most commonly visited variation of our terms page was the version where a user was presented with multiple options, so we focused our test on that experience.</p>
+      </div>
+      <div class="img-container">
+        <div class="img-full">
+          <img class="p-img" src="../../images/checkout-05.jpg" />
+          <p class="caption">Some examples of terms page ideation.</p>
         </div>
-        <div class="text-container">
-          <p>5 of 6 users commented that our application page was simple. In contrast, all 6 customers had issues with our approved terms page. Specifically, all users said they expected to click on one of the loan options to see more details about the plan when, in fact, there was no clear information about the loan on the next page. 5 users also mentioned that they really liked the transparency of information on the compare page. However only half of participants even noticed the “Compare Plans” button.</p>
-          <p>To us, these results pointed towards an opportunity to improve our terms page. Based on both the data and qualitative results, we hypothesized that the two-page experience was causing users to miss the information they needed to decide whether or not to use Bread.</p>
-          <h2>Getting to our first A/B test</h2>
-          <p>Looking at data and speaking to users about hypothetical decisions helped to build confidence that we were looking at the right problems, however the only way to truly understand whether a new interface improves conversion is to test with real customers who are shopping with their own money. Because we were talking about making changes to one of most important areas of product, we quickly decided that we needed to run an A/B test.</p>
-          <p>In parallel with our research, we had started ideating on and prototyping potential improvements to our checkout. We started off with a broad exploaration across the funnel but, as we learned more, we began to narrow our focus on our terms pages.</p>
+      </div>
+      <div class="text-container">
+        <p>As we ideated on the terms page, we focused on displaying information that users deemed most valuable during user testing. Given the confusion we saw in our user research, we used standard patterns and selectors (radio selectors and buttons). We created prototypes and ran solutions by potential users and internal stakeholders to build confidence and identify potentialy issues. Finally, we scaled back on explorations that weren't core to the test (e.g. progress bars, footer visual styles) to focus on a solution that would be easy to implement and consistent with the rest of the checkout.</p>
+        <p>Then, we moved on to actually running the test. Because retail is highly seasonal and our sales data fluctuated quite a bit day over day, we needed to run a true A/B test. Bread had never run an A/B test before and I worked with engineering to create a testing plan. We decided to split the population ourselves and track the results with Heap. Finally, we set goals, determined how long we needed to run the test for, and we ran our test plan by our leadership team. As the test ran, we also provided daily reporting to stakeholders to allay any fears about harming our checkout volume.</p>
+      </div>
+      <div class="img-container">
+        <div class="img-full">
+          <img class="p-img" src="../../images/checkout-06.jpg" />
+          <p class="caption">The updated terms pages for a typical user (left) and a user who is only partially approved (right). The credit limit tip is an option that retailers can choose to show.</p>
         </div>
-        <div class="img-container">
-          <img src="../../images/checkout-03.jpg">
-          <p class="img-caption">Examples of early checkout design explorations with white-labeled retailer branding.</p>
+      </div>
+      <div class="text-container">
+        <p class="mb-48"><strong>In the end, we saw a 4% increase in checkout conversion.</strong> As we hypothesized, we saw a decrease in people who progressed from the terms page (a reduction in mistaken clicks) but a 15% increase in conversion on the shipping and review pages. Once our results were significant, we rolled out the improvement to our full population.</p>
+        <h3>Ramping up our research and testing</h3>
+        <p>Since our first test, we've continued to work on improving our checkout. We've run additional research studies, set up funnel reports to share with our board and leadership team, and rolled out new features and tests. Some examples include:</p>
+        <p><strong>Improving Our Application</strong></p>
+        <p>As I noted above, the other area that we identified as a potential opportunity for improving conversion was the first page of our application. The drop off is even higher than on the terms page. We also saw that most people were dropping off without even starting the form and that once someone started the form, they were almost certain to submit the application. We wanted to test whether splitting up the application would be feel less overwhelming to users and lead to better results. In parallel, we were also exploring additional information sources that would allow us to ask for less user information in our application and we wanted to validate whether it was a worthy investment. <strong>So, we ran an A/B test of our split application and saw 3% in increase in overall conversion and a 10% increase in users who completed the first page of our application.</strong></p>
+      </div>
+      <div class="img-container">
+        <div class="img-full">
+          <img class="p-img" src="../../images/checkout-07.jpg" />
+          <p class="caption">The original application (left) and the shortened two page version, post-rebrand (right).</p>
         </div>
-        <div class="text-container">
-          <p>As we worked through designs for the terms page, we prioritized our work based on a few constraints and guiding principles.</p>
-          <p>First, the post-application funnel of our product is complicated with a number of possibilities. The experience varies based on options that the merchant configures (our checkout product is often white-labeled), the credit quality of the customer (e.g. various approval and denial status), and where on the merchant's site a user applied. Our designs needed to account for all of these scenarios.</p>
-        </div>
-        <div class="img-container">
-          <img src="../../images/checkout-04.jpg">
-          <p class="img-caption">Some examples of terms page edge cases for down payments, different numbers of terms, and conditional approvals.</p>
-        </div>
-        <div class="text-container">
-          <p>Second, while we explored many visual styles, we didn’t want to make sweeping changes and redesign entire checkout in this test. Nothing in our research indicated that visual design was a problem so we decided to save that for future prioritization. We cleaned things up as we touched them (e.g. removing off-brand illustrations, establishing clearer visual hierarchy) but held ourselves back from a redesign of our entire UI.</p>
-          <p>Finally, we focused on generating results. The changes we made were informed by user research and we prioritized the areas that were most likely to have a positive impact. For example, our data showed us that the most commonly visited variation of our terms page was the version where a user was presented with multiple options, so we focused our test on that experience.</p>
-        </div>
-        <div class="img-container">
-          <img src="../../images/checkout-05.jpg">
-          <p class="img-caption">Some examples of terms page ideation.</p>
-        </div>
-        <div class="text-container">
-          <p>As we ideated on the terms page, we focused on displaying information that users deemed most valuable during user testing. Given the confusion we saw in our user research, we used standard patterns and selectors (radio selectors and buttons). We created prototypes and ran solutions by potential users and internal stakeholders to build confidence and identify potentialy issues. Finally, we scaled back on explorations that weren't core to the test (e.g. progress bars, footer visual styles) to focus on a solution that would be easy to implement and consistent with the rest of the checkout.</p>
-          <p>Then, we moved on to actually running the test. Because retail is highly seasonal and our sales data fluctuated quite a bit day over day, we needed to run a true A/B test. Bread had never run an A/B test before and I worked with engineering to create a testing plan. We decided to split the population ourselves and track the results with Heap. Finally, we set goals, determined how long we needed to run the test for, and we ran our test plan by our leadership team. As the test ran, we also provided daily reporting to stakeholders to allay any fears about harming our checkout volume.</p>
-        </div>
-        <div class="img-container">
-          <img src="../../images/checkout-06.jpg">
-          <p class="img-caption">The updated terms pages for a typical user (left) and a user who is only partially approved (right). The credit limit tip is an option that retailers can choose to show.</p>
-        </div>
-        <div class="text-container">
-          <p><strong>In the end, we saw a 4% increase in checkout conversion.</strong> As we hypothesized, we saw a decrease in people who progressed from the terms page (a reduction in mistaken clicks) but a 15% increase in conversion on the shipping and review pages. Once our results were significant, we rolled out the improvement to our full population.</p>
-          <h2>Ramping up our research and testing</h2>
-          <p>Since our first test, we've continued to work on improving our checkout. We've run additional research studies, set up funnel reports to share with our board and leadership team, and rolled out new features and tests. Some examples include:</p>
-          <h3>Improving Our Application</h3>
-          <p>As I noted above, the other area that we identified as a potential opportunity for improving conversion was the first page of our application. The drop off is even higher than on the terms page. We also saw that most people were dropping off without even starting the form and that once someone started the form, they were almost certain to submit the application. We wanted to test whether splitting up the application would be feel less overwhelming to users and lead to better results. In parallel, we were also exploring additional information sources that would allow us to ask for less user information in our application and we wanted to validate whether it was a worthy investment. <strong>So, we ran an A/B test of our split application and saw 3% in increase in overall conversion and a 10% increase in users who completed the first page of our application.</strong></p>
-        </div>
-        <div class="img-container">
-          <img src="../../images/checkout-07.jpg">
-          <p class="img-caption">The original application (left) and the shortened two page version, post-rebrand (right).</p>
-        </div>
-        <div class="text-container">
-          <h3>Automating Retargeting</h3>
-          <p>To further improve our conversion of approved customers, we surveyed users who were approved but didn’t check out. The largest group consisted of users who said they weren’t ready to buy but would still likely check out with financing. We had also seen that some of our retailer partners were succesfully running retargeting campaigns using manual pulls of our data data. So, we tested automating a retargeting email. I partnered with a product manager and engineer to design a test, build our email logic, design an email template, and roll out tests to retailers who opted in for the service. <strong>We ran an A/B test across dozens of retailers and saw that the email generated a 24% lift in checkout conversion.</strong> We subsequently partnered with our customer success team and rolled out the feature to most of our merchants.</p>
-        </div>
-        <div class="text-container">
-          <a href="../">Back To All Work</a>
-        </div>
-      </section>
+      </div>
+      <div class="text-container">
+        <p><strong>Automating Retargeting</strong></p>
+        <p>To further improve our conversion of approved customers, we surveyed users who were approved but didn’t check out. The largest group consisted of users who said they weren’t ready to buy but would still likely check out with financing. We had also seen that some of our retailer partners were succesfully running retargeting campaigns using manual pulls of our data data. So, we tested automating a retargeting email. I partnered with a product manager and engineer to design a test, build our email logic, design an email template, and roll out tests to retailers who opted in for the service. <strong>We ran an A/B test across dozens of retailers and saw that the email generated a 24% lift in checkout conversion.</strong> We subsequently partnered with our customer success team and rolled out the feature to most of our merchants.</p>
+      </div>
+      <div class="text-container link-container">
+        <a class="back-link" href="../">Back To All Work</a>
+      </div>
     </div>
   </body>
 </html>
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script>
-
-  function switchToHome() {
-     $('body').fadeOut(500);
-     setTimeout(function() {
-       $(location).attr('href',"../../");
-     }, 500);
-  }
-
-  function switchToAbout() {
-     $('body').fadeOut(500);
-     setTimeout(function() {
-       $(location).attr('href',"../../about/");
-     }, 500);
-  }
-
-  function switchToWork() {
-     $('body').fadeOut(500);
-     setTimeout(function() {
-       $(location).attr('href',"../../work/");
-     }, 500);
-  }
-
-</script>
