@@ -27,7 +27,7 @@
         <div class="profile">
           <img src="../../images/profile.png" />
         </div>
-        <a class="email" href="mailto:hi@ericli.io">hi@ericli.io</a>
+        <a class="email">hi@ericli.io</a>
       </div>
       <div class="right">
         <a href="../">Work</a>
@@ -38,7 +38,7 @@
       <section class="portfolio-header">
         <div class="title-container">
           <p class="tag">Uber Eats • Case Study</p>
-          <h1 class="title">Reducing courier wait time by improving the Uber Eats restaurant dashboard</h1>
+          <h1>Improving the Uber Eats restaurant tablet to make couriers wait less</h1>
         </div>
         <div class="img-container">
           <div class="img-header" id="prediction-header" >
@@ -78,7 +78,7 @@
           <li>"Busyness" is the main cause of delays but is hard for us to predict or detect (e.g. a large dine-in group, orders on competitor apps) → <strong>How might we enable restaurants to provide us with real-time busyness signals?</strong></li>
         </ul>
         <h3>More informative order cards</h3>
-        <p>In order to adhere to pickup times, restuarants needed to be aware of them. Thus, it was very important that we improved the clarity and consistency of the times that we showed restaurants throughout the experience.</p>
+        <p>In order to adhere to pickup times, restaurants needed to be aware of them. Thus, it was very important that we improved the clarity and consistency of the times that we showed restaurants throughout the experience.</p>
         <p>During our field research, we started putting concepts in front of users. We showed users multiple order cards variations and  found that all restaurants preferred countdown times over clock times and better understood cards with labels and integrated courier information.</p>
       </div>
       <div class="img-container">
@@ -90,7 +90,7 @@
       <div class="text-container">
         <p>From there, I broadly explored concepts for re-imaging our order and courier card layout. Through reviews with product, engineering, and other designers, we refined our concepts down to a final version that solved the problems we discovered in research:</p>
         <ul>
-          <li>We previously messaged both static "due times" as well as real-time courier pick up times. We decided to switch to a single system of always showing our best guess of the pick up time. </li>
+          <li>We previously messaged both static "due times" as well as real-time courier ETAs. We decided to switch to a single system of always showing our best guess of the pick up ETA.</li>
           <li>We improved the clarity of pickup times by moving from clock to countdown times and adding labels and visual states that communicated the urgency and status of orders at a glance. We also reduced rendundancy and clutter in the UI by integrating our courier and order cards.</li>
           <li>We added new statuses (e.g. courier waiting) and removed statuses that were confusing (e.g. courier late).</li>
         </ul>
@@ -133,7 +133,7 @@
         </div>
       </div>
       <div class="text-container">
-        <p>We added an entrypoint to the header of our order details modal and updated our order delay UX to use a stepper pattern. We also reframed our time messaging to focus on total prep time instead of additive time. Finally, we added dynamic messaging that increased in severity as the user delayed for longer. While we had previously hidden the feature to prevent abuse, we instead wanted to add an appropriate amount of friction and feedback to long delays to make sure they are intentional.</p>
+        <p>Previously, we had hidden the feature to prevent abuse but this had unintended consequences. So, we decided instead to add an appropriate amount of friction and feedback to delays to make sure they were intentional. We added an entrypoint to the header of our order details modal and updated our order delay UX to use a stepper pattern. We also reframed our time messaging to focus on total prep time instead of additive time. Finally, we added dynamic messaging that increased in severity as the user delayed for longer. </p>
       </div>
       <div class="img-container">
         <div class="img-half">
@@ -159,30 +159,30 @@
       </div>
       <div class="text-container">
         <h3>Accounting for unpredicted busyness</h3>
-        <p>Finally, to account for unpredicted delays, we also introduced a feature that allows restuarants to indicate how busy they are. [Balance between delays and mistakes that will cause delivery times to go up across the board. Entrypoint next to pause - get people to go from pausing to busy mode. Limitations on busymode time. Busy mode indicator. Navigation improvements (for later).]</p>
+        <p>Finally, to account for unpredicted delays, we also introduced a feature that allows restaurants to indicate how busy they are. Whereas delays only affect individual orders that have already been placed, busy mode allows restaurants to proactively add time to all orders. This allows restaurants to set expectations with customers before the order is placed and also allows restaurants to dampen demand without having to completely pause their tablet.</p>
       </div>
       <div class="img-container">
         <div class="img-half">
           <img class="p-img" src="../../images/predictions/p-busy-1.png" />
-          <p class="caption">The existing version of our restaurant dashboard.</p>
+          <p class="caption">We introduced an entrypoint to the navigation.</p>
         </div>
         <div class="img-half">
           <img class="p-img" src="../../images/predictions/p-busy-2.png" />
-          <p class="caption">The existing version of our restaurant dashboard.</p>
+          <p class="caption">Busy mode allows restaurants to add time to all new orders.</p>
         </div>
         <div class="img-half">
           <img class="p-img" src="../../images/predictions/p-busy-3.png" />
-          <p class="caption">The existing version of our restaurant dashboard.</p>
+          <p class="caption">We explain the impact of busy mode on customers.</p>
         </div>
         <div class="img-half">
           <img class="p-img" src="../../images/predictions/p-busy-4.png" />
-          <p class="caption">The existing version of our restaurant dashboard.</p>
+          <p class="caption">To avoid mistakes, busy mode is temporary.</p>
         </div>
       </div>
       <div class="text-container">
         <h3>Next steps</h3>
         <p>At the moment these features are in development and we're preparing for launch. We'll want to evaluate how the features impact marketplace metrics including wait time, average delivery times, and restaurant and courier feedback.</p>
-        <p>We also see further opportunities to better handle batched orders, encourage responsible usage of the ready button, communicate order status to couriers, and make additional UX changes to our tablet to improve workflow efficiency.</p>
+        <p>We also see further opportunities to better handle batched orders, encourage responsible usage of the ready button, communicate order status to couriers, improve reporting and analytics for operational metrics, and make additional changes to our tablet and receipts to improve workflow efficiency.</p>
       </div>
       <div class="text-container link-container">
         <a class="back-link" href="../">Back To All Work</a>

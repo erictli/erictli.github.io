@@ -434,6 +434,10 @@ h4 {
   border-bottom: solid 2px #000;
 }
 
+.active:hover {
+  opacity: 1;
+}
+
 
 .header-section .email {
   margin-left: 0px;
@@ -445,6 +449,10 @@ h4 {
   animation: backgroundGradient 60s ease infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.header-section .email:hover {
+  opacity: 1;
 }
 
 .right {
@@ -478,7 +486,7 @@ h4 {
 }
 
 #work-page .body-section {
-  padding: 64px 48px 80px;
+  padding: 56px 48px 80px;
 }
 
 .work-preview {
@@ -602,7 +610,7 @@ h4 {
 /* Animations */
 
 .animated {
-  animation-duration: 1.2s;
+  animation-duration: 1s;
   animation-fill-mode: both;
 }
 
@@ -612,8 +620,8 @@ h4 {
 }
 
 .animated-delay {
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 @keyframes fadeIn {
