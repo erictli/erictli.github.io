@@ -512,6 +512,19 @@ h4 {
   background: linear-gradient(#F4E6CB, #F6D6D6);
 }
 
+#work-ordering img {
+  cursor: default;
+}
+
+#work-ordering:hover {
+  opacity: 1;
+}
+
+#work-ordering:hover img {
+  opacity: 1;
+}
+
+
 #work-tools {
   background: linear-gradient(#F6D6D6, #CEDFFF);
 }
@@ -553,7 +566,6 @@ h4 {
   margin: auto;
   padding: 0 48px;
 }
-
 .work-text a {
   border-bottom: 2px solid #000;
   padding-bottom: 4px;
@@ -566,6 +578,16 @@ h4 {
 .work-text a:hover {
   opacity: 0.5;
 }
+
+.work-text .disabled {
+  border-bottom: none;
+  opacity: 0.35;
+}
+
+.work-text .disabled:hover {
+  opacity: 0.35;
+}
+
 
 @media screen and (max-width: 824px) {
 
