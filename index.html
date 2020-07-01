@@ -21,8 +21,87 @@
     </script>
 
   </head>
-  <body>
-    <div class="header-container">
+  <body class="homepage">
+    <div class="hero-bg">
+      <div class="header-container">
+        <div class="header">
+          <img class="header-img" src="images/header-2.png"/>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="hero">
+          <div class="g-text">
+            <h1 class="hero-title">Eric Li is a product designer based in New York City.</h1>
+            <p>I work at Uber Eats where I design products for consumers, restaurants, and couriers.</p>
+            <div class="email-button">
+              <a class="mailto" href="mailto:hi@ericli.io">hi@ericli.io</a>
+              <a class="copy" onclick="copyEmail()" onmouseout="outFunc()"><span class="tooltiptext" id="tooltip">Copy email</span>⌘C</a>
+            </div>
+            <input id="email" readonly="readonly" value="hi@ericli.io">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid boxes">
+      <div class="g-header">
+        <h2>Some problems I've worked on.</h2>
+      </div>
+      <div id="eats-2" class="g-box g-7">
+        <div class="g-text">
+          <h4>Uber Eats</h4>
+          <h3>Improving restaurant tools to help couriers save time</h3>
+        </div>
+        <img src="images/eats-2.png"/>
+      </div>
+      <div id="eats-1" class="g-box g-5">
+        <div class="g-text">
+          <h4>Uber Eats</h4>
+          <h3>Designing new ways for people to order food</h3>
+        </div>
+        <img src="images/eats-1.png"/>
+      </div>
+      <div id="bread" class="g-box g-4">
+        <div class="g-text">
+          <h4>Bread</h4>
+          <h3>Creating a user-friendly loan repayment experience</h3>
+        </div>
+        <img src="images/bread-1.png"/>
+      </div>
+      <div id="bread" class="g-box g-4">
+        <div class="g-text">
+          <h4>Bread</h4>
+          <h3>Improving conversion for a pay-over-time checkout</h3>
+        </div>
+        <img src="images/bread-2.png"/>
+      </div>
+      <div id="topology" class="g-box g-4">
+        <div class="g-text">
+          <h4>Topology</h4>
+          <h3>Launching a direct to consumer clothing brand</h3>
+        </div>
+        <div class="box-overlay"></div>
+        <img src="images/topology.png"/>
+      </div>
+      <div class="about">
+        <h2>A bit more about me.</h2>
+        <p>I'm an investment banker turned designer based in New York City. I work on the Uber Eats Marketplace Team where I lead logistics, predictions, and pricing projects across our consumer, restaurant, and courier apps.</p>
+        <p>I studied economics at UChicago and covered tech and media companies at J.P. Morgan. After growing tired of staring at spreadsheets all day (and night), I led an innovation-focused product team at Sears. I then joined Capture, where I designed social-search tools used by CNN and The Washington Post. After Capture, I led product design at Bread where I designed easy-to-use financial products and helped the company grow from less than 20 to over 100 people.</p>
+        <div class="links">
+          <p><a href="mailto:hi@ericli.io">hi@ericli.io</a></p>
+          <p><a target="_blank" href="https://www.linkedin.com/in/erictli/">LinkedIn</a></p>
+          <p><a target="_blank" href="https://dribbble.com/helloeric">Dribbble</a></p>
+        </div>
+      </div>
+    </div>
+    <!--<div class="email-footer">
+      <div class="grid">
+        <div class="email-footer-content">
+          <a>ericli.io</a>
+        </div>
+      </div>
+    </div>-->
+
+    <!--<div class="header-container">
       <div class="header">
         <img class="header-img" src="images/header.png"/>
       </div>
@@ -40,7 +119,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
   </body>
 </html>
 
@@ -49,6 +128,29 @@
 
 $(window).scroll(function(){
     $(".header-container").css("opacity", 1 - $(window).scrollTop() / 240);
+    $(".hero").css("opacity", 1 - $(window).scrollTop() / 240);
+    $(".hero-bg").css("opacity", 1 - ($(window).scrollTop() / 360 - 0.5));
   });
+
+function copyEmail() {
+  /* Get the text field */
+  var copyText = document.getElementById("email");;
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  var tooltip = document.getElementById("tooltip");
+  tooltip.innerHTML = "Email copied!";
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("tooltip");
+  tooltip.innerHTML = "Copy email";
+}
 
 </script>
