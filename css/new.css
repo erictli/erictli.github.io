@@ -13,8 +13,8 @@ html {
 }
 
 body {
-  color: #fff;
-  background: #fff;
+  color: #eee;
+  background: #eee;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
@@ -76,8 +76,9 @@ i {
   width: 100%;
   height: 100%;
   padding-top: 120px;
-  border: solid 24px #fff;
-  background: #cd5032;
+  border: solid 20px #eee;
+  //background: #cd5032;
+  background: #000;
 }
 
 .content {
