@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Eric Li Design</title>
+    <title>Eric Li</title>
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -22,26 +22,39 @@
     </script>
   </head>
   <body>
-    <div class="hero">
+    <div class="overlay"></div>
+    <div id="luckycat">
+      <video id="cat" class="floating" loop playsinline autoplay="autoplay" muted>
+        <source src="images/cat.mp4" type="video/mp4">
+      </video>
+      <img id="computer" class="floating2" src="images/computer.png">
+    </div>
+    <div class="header">
       <div class="container">
-        <div id="luckycat">
-          <video id="cat" class="floating" loop playsinline autoplay="autoplay" muted>
-            <source src="images/cat.mp4" type="video/mp4">
-          </video>
-          <img id="computer" class="floating2" src="images/computer.png">
+        <h4>✱ &nbsp;Site last updated April 2022</h4>
+        <div class="header-links">
+          <h4 id="emoji-button" onclick="toggleEmojis()">Got emojis?</h4>
         </div>
       </div>
     </div>
-    <div class="content">
-      <div class="container">
-        <h1 class="hero-title">Eric Li is a designer and product manager based in New York City.</h1>
-        <p>He's currently creating tools for finance teams at <a target="_blank" href="https://www.vareto.com/">Vareto</a>. Previously, he worked on restaurant, consumer, and courier apps at Uber Eats, built easy-to-use financial products at Bread, and designed social search tools for reporters at Capture. In a past life, he worked in finance and studied Economics at the University of Chicago.</p>
-        <div class="links">
-          <p><a class="copy" onclick="copyEmail()" onmouseout="outFunc()"><span class="tooltiptext" id="tooltip">Copy email</span>hi@ericli.io</a></p>
-          <p><a target="_blank" href="https://www.linkedin.com/in/erictli/">LinkedIn</a></p>
-          <p><a target="_blank" href="https://dribbble.com/helloeric">Dribbble</a></p>
-        </div>
-        <input id="email" readonly="readonly" value="hi@ericli.io">
+    <div class="container">
+      <div class="content">
+        <h1>Eric Li is a <span class="italic">New York City</span> <span class="emoji">🍎&nbsp;</span>based designer <span class="emoji">🧑‍🎨&nbsp;</span>and product manager<span class="emoji">&nbsp;🧑‍💻</span>.</h1>
+        <div class="say-more">
+          <div>
+            <div class="links">
+              <h4>Links</h4>
+              <p><a class="copy" onclick="copyEmail()" onmouseout="outFunc()"><span class="tooltiptext" id="tooltip">Copy email</span>▲ &nbsp;&nbsp;hi@ericli.io</a></p>
+              <p><a target="_blank" href="https://www.linkedin.com/in/erictli/">■ &nbsp;&nbsp;LinkedIn</a></p>
+              <p><a target="_blank" href="https://dribbble.com/helloeric">● &nbsp;&nbsp;Dribbble</a></p>
+              <input id="email" readonly="readonly" value="hi@ericli.io">
+            </div>
+          </div>
+          <div class="about">
+            <h4>Longer version</h4>
+            <p>Eric is a design manager and product manager at <a target="_blank" href="https://www.vareto.com/">Vareto</a><span class="emoji">&nbsp;💸</span>, where he's creating better software for finance teams. Previously, he worked on restaurant, consumer, and courier apps at Uber Eats<span class="emoji">&nbsp;🍙</span>, built easy-to-use financial products at <a target="_blank" href="https://www.prnewswire.com/news-releases/alliance-data-completes-acquisition-of-bread-301186414.html">Bread</a><span class="emoji">&nbsp;🍞</span>, and designed social search tools for reporters at <a target="_blank" href="https://www.prnewswire.com/news-releases/tagboard-to-acquire-capture-300346225.html">Capture</a><span class="emoji">&nbsp;📷</span>. In a past life, he worked in finance and studied Economics<span class="emoji">&nbsp;📈</span> at the University of Chicago<span class="emoji">&nbsp;🥶</span>.</p>
+          </div> 
+        </div>   
       </div>
     </div>
   </body>
@@ -49,10 +62,6 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
-
-$(window).scroll(function(){
-    $("#luckycat").css("opacity", 1 - $(window).scrollTop() / 600);
-  });
 
 function copyEmail() {
   /* Get the text field */
@@ -73,6 +82,24 @@ function copyEmail() {
 function outFunc() {
   var tooltip = document.getElementById("tooltip");
   tooltip.innerHTML = "Copy email";
+}
+
+var showEmojis = false;
+
+function toggleEmojis() {
+  var emojis = document.getElementsByClassName("emoji");
+  if(!showEmojis) {
+    for (var i = 0, l = emojis.length; i < l; i++) {
+      emojis[i].style.display = "inline-block";
+      document.getElementById("emoji-button").textContent="Ugh, too much";
+    }
+  }else{
+    for (var i = 0, l = emojis.length; i < l; i++) {
+      emojis[i].style.display = "none";
+      document.getElementById("emoji-button").textContent="Got emojis?";
+    }
+  }
+  showEmojis = !showEmojis;
 }
 
 </script>
