@@ -149,7 +149,7 @@ a:hover {
 }
 
 .about {
-  margin-bottom: 40px;
+  padding-bottom: 48px;
 }
 
 .overlay {
@@ -260,7 +260,8 @@ a:hover {
   h1 {
     font-size: 80px;
     line-height: 88px;
-    margin-bottom: 112px;
+    margin-bottom: 56px;
+    text-align: left;
   }
 
   .header {
@@ -272,8 +273,16 @@ a:hover {
     flex-direction: column-reverse;
   }
 
+  .about {
+    border-bottom: solid 1px rgba(255,255,255,0.25);
+  }
+
+  .links {
+    padding-top: 56px;
+  }
+
   .content {
-    padding-top: 160px;
+    padding-top: 480px;
   }
 }
 
@@ -282,15 +291,10 @@ a:hover {
   h1 {
     font-size: 68px;
     line-height: 76px;
-    margin-bottom: 80px;
   }
 
   h4 {
     font-size: 15px;
-  }
-
-  .content {
-    padding-top: 120px;
   }
 
   .links p {
@@ -299,6 +303,10 @@ a:hover {
 
   .tooltiptext {
     font-size: 15px;
+  }
+  
+  #luckycat {
+    top: 5%;
   }
 }
 
