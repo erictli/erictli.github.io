@@ -288,9 +288,18 @@ a:hover {
 
 
 @media screen and (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .header {
+    padding: 16px 0 0;
+    background: #000;
+  }
+
   h1 {
-    font-size: 68px;
-    line-height: 76px;
+    font-size: 64px;
+    line-height: 72px;
   }
 
   h4 {
