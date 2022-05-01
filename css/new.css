@@ -159,7 +159,6 @@ a:hover {
   background-image: url(../images/Noise.png);
   background-size: 88px;
   mix-blend-mode: overlay;
-  backdrop-filter: blur(5px) grayscale(100%);
   opacity: 100%;
   z-index: -8;
 }
@@ -171,6 +170,7 @@ a:hover {
   width: 400%;
   top: 10%;
   left: -150%;
+  filter: grayscale(100%) blur(4px);
 }
 
 #cat {
